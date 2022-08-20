@@ -32,20 +32,24 @@ h2, p{color:rgb(255, 255, 255);}
 }
 /*header end*/
 
-/*home page and contact page layout*/
-.homePage, .contact {
+/*home contact and projectPage layout*/
+.homePage, .contact ,.projectPage{
   background: rgb(0, 0, 54);
   padding: 1vh 15vw 4vh;
   display: flex;
   flex-direction: column;
 }
-/* end of home page and contact page layout*/
+/* end of home contact and projectPage layout*/
 
 /*home page only*/
 .mySection img{ max-width: 100%;}
 .skills{margin: 4vh 0vw;}
 #viewProjects{margin-bottom: 4vh;}
 /*home page only end*/
+
+/*project page*/
+.projectPage h2 { margin: 10vh 0vw 2vh;}
+/*end of project page*/
 
 /*about*/
 .about{ 
@@ -57,7 +61,7 @@ h2, p{color:rgb(255, 255, 255);}
 /*about end*/
 
 /*contact page*/
-.contact h2 {margin: 5vh 0vw;}
+.contact h2{margin: 5vh 0vw;}
 
 .contact form{
   display: grid;
