@@ -1,8 +1,14 @@
 *{
   font-family: Arial, Helvetica, sans-serif; 
   text-align: center;
+  scroll-behavior: smooth;
 }
-h1 ,h2, p{color:rgb(255, 255, 255);}
+
+h1 {
+  margin-top: 8vh;
+  color:rgb(255, 255, 255);
+} 
+h2, p{color:rgb(255, 255, 255);}
 
 /*All Links in app*/
 .link { 
@@ -20,6 +26,9 @@ h1 ,h2, p{color:rgb(255, 255, 255);}
   display: flex;
   justify-content: space-evenly;
   padding: 1.5vh 1.5vw;
+  font-weight: bold;
+  position: fixed;
+  width: 100vw;
 }
 /*header end*/
 
@@ -32,24 +41,88 @@ h1 ,h2, p{color:rgb(255, 255, 255);}
 }
 /* end of home page and contact page layout*/
 
-/*home page*/
-.mySection {align-items: center;}
-
-.mySection img{ max-width: 70%;}
-/*home page end*/
+/*home page only*/
+.mySection img{ max-width: 100%;}
+.skills{margin: 4vh 0vw;}
+#viewProjects{margin-bottom: 4vh;}
+/*home page only end*/
 
 /*about*/
 .about{ 
-  background: rgb(15, 81, 181);
+  background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  padding: 1vh 15vw 4vh;
+  padding: 4vh 15vw;
 }
 /*about end*/
 
 /*contact page*/
-.contactForm{
-  
+.contact h2 {margin: 5vh 0vw;}
+
+.contact form{
+  display: grid;
+  justify-content: center;
+  gap: 0.5vh 0.5vw;
+  grid-template-columns: auto;
+}
+
+.contact-section1 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0.5vh 0.5vw;
+}
+
+.contact button{
+  padding: 1vh 0vw;
+  font-size: 2vh;
+  width: 80vw;
+  border: 0.1vh solid rgb(255, 255, 255);
+  background:rgb(0, 0, 54);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.contact button:hover{ background:rgb(15, 81, 181);}
+
+.contact-item1, .contact-item2,
+.contact-item3, .contact-item4 {
+  text-align: left;
+  padding: 1.5vh 1.5vw;
+  font-size: 2vh;
+  border: 0.1vh solid rgb(255, 255, 255);
+  background:rgb(0, 0, 54);
+  color: rgb(255, 255, 255);
+}
+
+.contact-item3 {
+  word-wrap: break-word;
+  height: 10vh;
+}
+
+#error {
+  font-size: 2.5vh;
+  color:rgb(255, 255, 255);
+  margin: 3vh 0vw;
 }
 /*contact end*/
 
+/*Responsive*/
+@media only screen and (min-width: 769px){
+  .mySection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh 12vw;
+  }
+
+  .mySection img{ width: 100vw;}
+
+  .profile, .profileImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section1{grid-template-columns: auto auto;}
+}
+/* End of Responsive */

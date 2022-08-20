@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom'; 
+import {HashLink} from 'react-router-hash-link';
 
 function Header(){
     return (
         <nav className="header">
-            <Link to='/home' className='link'>
-                Project
-            </Link>
-            <Link to="/home" className='link'>
+            <HashLink to='/#viewProjects' className='link'>
+                Projects
+            </HashLink>
+            <HashLink to="/#about" className='link'>
                 About
-            </Link>
-            <Link to='/home' className='link'>
+            </HashLink>
+            <HashLink to='/#contact' className='link'>
                 Contact
-            </Link>
+            </HashLink>
         </nav>
     )
 }
