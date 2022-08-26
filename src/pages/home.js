@@ -10,7 +10,7 @@ function Home(){
         <div>
             <div className='homePage'>
                 <h1>Heading</h1>
-                <div className='mySection'>
+                <div id='mySection'>
                     <div className='profile'>
                         <h2>Hi! I'm Jordan</h2>
                         <p>.....</p>
@@ -29,45 +29,45 @@ function Home(){
                     to={`/projects/${project1.name}`}
                     state={{ name: project1.name, 
                             summary: project1.summary,
-                            description: project1.description,
+                            process: project1.process,
                             difficulties: project1.difficulties,
-                            foresight: project1.foresight, 
+                            future: project1.future, 
                             video: project1.video,
                             code: project1.code
                         }}>
                         <div>
                             <h3>{project1.name}</h3>
-                            <p>{project1.summary}</p>
+                            <p>{project1.snippet}</p>
                         </div>
                     </Link>
                     <Link className='project'
                     to={`/projects/${project2.name}`}
                     state={{ name: project2.name, 
                             summary: project2.summary,
-                            description: project2.description,
+                            process: project2.process,
                             difficulties: project2.difficulties,
-                            foresight: project2.foresight, 
+                            future: project2.future, 
                             video: project2.video,
                             code: project2.code
                         }}>
                         <div>
                             <h3>{project2.name}</h3>
-                            <p>{project2.summary}</p>
+                            <p>{project2.snippet}</p>
                         </div>
                     </Link>
                     <Link className='project'
                     to={`/projects/${project3.name}`}
-                    state={{ name: project3.name, 
+                    state={{ name: project3.name,
                             summary: project3.summary,
-                            description: project3.description,
+                            process: project3.process,
                             difficulties: project3.difficulties,
-                            foresight: project3.foresight, 
+                            future: project3.future,
                             video: project3.video,
                             code: project3.code
                         }}>
                         <div>
                             <h3>{project3.name}</h3>
-                            <p>{project3.summary}</p>
+                            <p>{project3.snippet}</p>
                         </div>   
                     </Link>
                 </div>

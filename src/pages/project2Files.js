@@ -1,6 +1,9 @@
 export const project2 = {
     name : `AMD & Intel Web Scraper`,
-    summary : `AMD & Intel Web Scraper is an application that takes the
+    snippet: `AMD & Intel Web Scraper is an application that takes the
+        best rated desktops and laptops from AMD and Intel to display
+        that information for the user to see. The header...`,
+    summary : `\tAMD & Intel Web Scraper is an application that takes the
         best rated desktops and laptops from AMD and Intel to display
         that information for the user to see. The header includes a 
         link to the home page with a hamburger menu that contains four
@@ -11,11 +14,11 @@ export const project2 = {
         description of the product and the website it came from. Upon 
         clicking on the description, the user will be redirected to the 
         product itself. Currently, this application only scrapes from
-        best buy but the goal is to add more websites. Scroll down to the
-        foresight section to read my future plans.`,
-    description : ``,
+        best buy but the goal is to add more websites. Scroll down to see 
+        my future plans for this application.`,
+    process : `\t`,
     difficulties : ``,
-    foresight : ``,
+    future : ``,
     video : ``,
     code : ``
 };

@@ -18,7 +18,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
   color: rgb(255, 255, 255);
 }
 
-.link:hover{ color: rgb(0, 0, 0)}
+.link:hover{ color: rgb(0, 0, 0);}
 /*Links end*/
 
 /*header*/
@@ -43,7 +43,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
 /* end of home contact and projectPage layout*/
 
 /*home page only*/
-.mySection img{ max-width: 100%;}
+#mySection img{ max-width: 100%;}
 .skills{margin: 4vh 0vw;}
 
 #viewProjects div{
@@ -54,12 +54,11 @@ h2, h3, p{color:rgb(255, 255, 255);}
   padding: 1vh 2vw;
 }
 
-#viewProjects div:hover {
-  background: rgb(0, 0, 0);
-}
+#viewProjects div:hover {background: rgb(0, 0, 0);}
 /*home page only end*/
 
 /*project page*/
+.projectPage p {text-align: left;}
 .projectPage h2 { margin: 10vh 0vw 2vh;}
 /*end of project page*/
 
@@ -124,14 +123,14 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 /*Responsive*/
 @media only screen and (min-width: 769px){
-  .mySection{
+  #mySection{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4vh 12vw;
   }
 
-  .mySection img{ width: 100vw;}
+  #mySection img{ width: 100vw;}
 
   .profile, .profileImage{
     display: flex;
