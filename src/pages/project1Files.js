@@ -21,29 +21,26 @@ export const project1 = {
         the client is logged in. Clients can also add skateboards to the bag
         from their favorites. Scroll down to see my future plans for this
         website.`,
-    process : `SkateHouse was built using MySql, Express, React, and Node.
+    process : [`SkateHouse was built using MySql, Express, React, and Node.
         Node opens the files on the server and handles file request for the client. 
         MySql stores all of the websites information. Express allowed me 
         to build web pages using the api. React helped me create the client-side 
         of the website and fetch information needed to and from the web 
-        pages built from the api.
+        pages built from the api.`,
 
-        Backend dependencies include cors, express, mysql, and nodemon.
+        `Backend dependencies include cors, express, mysql, and nodemon.
         Cors is needed for this website. Without it, I would not be able
         to access resources from the frontend files. This is important because
         clients must be able to send a request to the backend(node) and then get a
         response from it. Cors allowed me to relax the security that applies to
         the api by allowing resources from another domain to be accessible.
-
         Express was used to build three web pages that were created using the api,
         /store, /favorites, and /users. These backend web pages(node files/backend files)
         gets request and sends responses to the frontend files. One example of this
         comes from the /store page. The /store page uses the get, post, and put
         methods from express to select, insert, and update the store in the backend
         web page which then sends a response to the frontend file(store file) in 
-        react. 
-        
-        I used multiple mysql query statements in the api to store and retrieve 
+        react. I used multiple mysql query statements in the api to store and retrieve 
         records from the database. For example, when a user wants to create an 
         account, that information must be stored in the database. Before that happens, 
         the api checks if the username or email already exist in the database 
@@ -51,14 +48,14 @@ export const project1 = {
         send a response message to the frontend files(react files) stating that 
         the username or email already exist. The query method allows the api to make 
         checks so that the database doesn't have duplicate information, it also holds 
-        information like skateboards and favorites.
+        information like skateboards and favorites.`,
 
-        Frontend dependencies include react, axios, react-bootstrap, react-burger-menu,
+        `Frontend dependencies include react, axios, react-bootstrap, react-burger-menu,
         react-dom, react-router-dom, react-hooks-global-state, react-scripts, 
         use-local-storage, and web-vitals. The react library is important because 
         it helped me create client-side web files(react files). It also has helpful 
         tools like hooks(useState, useEffect) that makes it easier to give variables 
-        and object properties a value. Axios fetches other domains and allows
+        and object properties a value. Axios fetches other domains data and allows
         the client to make http request to backend web pages(node files) and 
         then gets a response from those pages as well. This is why cors from the 
         backend was so important, axios is trying to access or send resources to 
@@ -87,8 +84,7 @@ export const project1 = {
         will change to dark mode and vice versa. Use-local-storage saves the clients
         choice to their local storage so that whenever the client visits the website,
         their prefered mode is already selected. React-dom, react-scripts, and web-vitals 
-        comes pre-installed with react. 
-        `,
+        comes pre-installed with react.`],
     difficulties : ``,
     future : ``,
     video : ``,
