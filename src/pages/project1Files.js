@@ -85,8 +85,27 @@ export const project1 = {
         choice to their local storage so that whenever the client visits the website,
         their prefered mode is already selected. React-dom, react-scripts, and web-vitals 
         comes pre-installed with react.`],
-    difficulties : ``,
-    future : ``,
+    difficulties : `The hardest parts about making this website were creating some of the
+        queries for mysql and figuring out how to display images using the database. In
+        college, I took a class on mysql but never used it with node so learning how
+        to read variables from the frontend was hard to find. I know reading variables
+        from the frontend to the database is a simple method but this project taught me 
+        how to properly google questions. I'm the kind of person that doesn't give up when 
+        I can't figure out something. When it came to googling questions, I would waste days 
+        trying to figure out how to do something that isn't possible all because I didn't 
+        ask the right question. It took me awhile to realize this pattern. I realized this was 
+        my weakness when I could not figure out how to display images using the database. At first, 
+        I thought you had to store the entire image in mysql. Then I googled, "the best practices 
+        for images in mysql". I learned that you should store the image path, not the entire image 
+        because it takes up a lot of space and slows the project down in terms of speed. Other than 
+        that, the website wasn't too bad. It took awhile to make because I had to first scope what 
+        the website would look like, and then do a ton of programming.`,
+    future : `I'm going to learn JWT access and refresh tokens soon so the client can stay logged
+        in even after the page refreshes, or to keep the client logged in for a few days. This is
+        the first thing I'm going to learn after I'm finished with my up and coming project that 
+        uses firebase. I've seen people do user authentication with npm local-stoarge and I know 
+        that's not the right way to do it. I will dive deeper into node so I can learn this 
+        the proper way.`,
     video : ``,
     code : ``
 };

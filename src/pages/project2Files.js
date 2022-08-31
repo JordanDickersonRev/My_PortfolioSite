@@ -53,8 +53,24 @@ export const project2 = {
         earlier to pass the web scraped information to the html template I created(results page).
         The results variable is different in each path because I used different parameters
         in the arrayLoop for each path.`],
-    difficulties : ``,
-    future : ``,
+    difficulties : `The hardest part about this project was learning how to print variables
+        inside of ejs. This was difficult because I never heard of ejs or JSON.stringify 
+        before this project. Some kind of template for html came accross my mind when
+        I realized that six of the website pages would have the same html, just different
+        results. I knew there had to be some kind of html template out there because programming
+        always has a template for anything when it comes to repeating the same thing over and 
+        over, just look at classes. After looking online I came across ejs. Ejs was easy
+        to understand but finding information on how to print variables inside of it took
+        a few days because of my work and life schedule. Sometimes it's hard to do projects
+        after work. Here's the embarrasing part, all I had to do was read all of the information
+        I found online and I would of figured it out fast. After that, I learned to never
+        skip over any information, even if I am tired.`,
+    future : `I would love to add more websites to the web scraper besides best buy. Any website
+        that gives me permission to scrape from is a plus. The more information, the better the 
+        website. I want to make the website public, that's why adding more sites are important. 
+        Having a project with actual users would look great in this portfolio. I also want to 
+        add custom designs and change the css too. I would of done all of that before but I had to
+        move on from this project at that moment.`,
     video : ``,
     code : ``
 };

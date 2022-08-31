@@ -41,8 +41,48 @@ export const project3 = {
         to use their original total by clicking on the AC button to clear the
         calculator completely. Read the difficulties section to learn how the pemdas
         and sumOf functions were created.`],
-    difficulties : ``,
-    future : ``,
+    difficulties : `To be honest, I underestimated this project. I didn't think about
+        please excuse my dear aunt sally when I started this. I thought creating a calculator
+        would be as easy as adding variables together in a line of code. The hardest part
+        about this project was creating an algorithm for multiple functions. The pemdas
+        function starts with two empty arrays, one array for multiplication and divison,
+        and another array for addition and substraction. There is also a for of loop that
+        loops through every index in the calculator array. The goal of this loop is to make 
+        sure multiplication and division are calculated first. Inside the for of loop, I 
+        created two variables that act as counters. I also created an if statement. The if
+        statement sees if the current index being looped through has a multiplication or 
+        division sign. The else if checks for addition or subtraction signs. The start 
+        variable and the end variable are important because they tell javascript how many
+        indexes should be taken from the calculator array. For example, if I have a calculator 
+        array that has [3,4,1,x,4,+,5,4,3], the loop would first multiply 341 x 4 because of the if
+        statement. The loop would then take that multiplied answer and push it to the addition
+        and subtraction array with "+" and "543". The pemdas function would then return an array
+        of ["multiplied answer","+","543"]. This was achieved using multiple loops and the 
+        sumOf function through out the entirety of pemdas. The sumOf function loops through the
+        array returned from the pemdas function. This is necessary because javascript does not
+        know how to calculate an array with different operators inside of it. The loop allows
+        us to tell javascript when to calculate the indexes inside the array. Without this 
+        function, the calculator would not work. For example, if the indexes in the calculator 
+        were [134,-,13,+,50,+,2], the sumOf function would first get the answer of 134-13 
+        which equals 121. The indexes of the calculator would then be [121,+,50,+,2], this 
+        process will repeat until the total is calculated. The sumOf function has multiple 
+        counters, if statements, a loop, and it calls the setOperator function to make all of 
+        this possible. The setOperator function takes in four parameters from the sumOf function.
+        Those four are operator, total, answer, and answer2. Operator stands for the type of
+        operation the calculation needs, this will be a "+", "-", "x", or "/". The other three
+        parameters are just numbers. The function does the calculations for the calculator
+        but not all at once. It can only do two numbers at a time. The total parameter returns
+        the total calculation of the function. The answer and answer2 parameters are the numbers
+        that get calculated. In the previous example where the calculator array was [134,-,13,+,
+        50,+,2], 134-13 gets calculated first, setOperator is the reason why. Engineering this
+        calculator was the hardest part. I thought this would only take a few hours but between
+        my work and life schedule, it took much longer. Much testing had to be done to ensure
+        this calculator was legit.`,
+    future : `I would love to go beyond basic calculations for this project. The goal at first
+        was to have more options besides multiplication, divison, addition, and subtraction.
+        That goal changed when I realized this project was going to take longer than expected.
+        I want to add calculations like sin, cos, tan, EXP, e and more in the future. The only
+        reason I moved on is because I had to add more projects to my portfolio.`,
     video : ``,
     code : ``
 };
