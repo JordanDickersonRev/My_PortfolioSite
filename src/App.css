@@ -13,24 +13,58 @@ h1 {
 h2, h3, p{color:rgb(255, 255, 255);}
 
 /*All Links in app*/
-.link { 
-  font-size: 2.5vh; 
-  color: rgb(255, 255, 255);
-}
 
-.link:hover{ color: rgb(0, 0, 0);}
 /*Links end*/
 
 /*header*/
 .header {
-  background: rgb(15, 81, 181);
   display: flex;
-  justify-content: space-evenly;
-  padding: 1.5vh 1.5vw;
-  font-weight: bold;
+  flex-direction: column;
+  background: rgb(15, 81, 181);
   position: fixed;
   width: 100vw;
+  text-transform: uppercase;
 }
+
+.logo {
+  font-weight: bold;
+  font-size: 2.5vh; 
+  padding: 3vh 2vw;
+  color: rgb(255, 255, 255);
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  width: 100vw; 
+  padding: 3vh 2vw;
+  font-size: 2.5vh;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.link:hover{ background: rgb(0, 0, 0);}
+
+.hamburger {
+  position: absolute;
+  padding: 1.6vh 3vw;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+}
+
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 1vh 0;
+}
+
+
 /*header end*/
 
 /*home contact and projectPage layout*/
@@ -144,6 +178,20 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 /*Responsive*/
 @media only screen and (min-width: 769px){
+  .header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .logo {text-align: center;}
+
+  .headerRight {flex-direction: row;}
+
+  .link{width: auto;}
+
+  .hamburger {display: none;}
+
   #mySection{
     display: flex;
     justify-content: center;
