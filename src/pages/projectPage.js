@@ -5,8 +5,6 @@ function ProjectPage(){
     const location = useLocation();
     const { name, summary, process, difficulties, future, video, code} = location.state;
     
-   
-
     return(
         <div className="projectPage">
             <h1>{name}</h1>

@@ -6,8 +6,8 @@
 }
 
 h1 {
-  margin-top: 8vh;
   color:rgb(255, 255, 255);
+  margin-top: 12vh;
 } 
 
 h2, h3, p{color:rgb(255, 255, 255);}
@@ -31,6 +31,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
   font-size: 2.5vh; 
   padding: 3vh 2vw;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .headerRight {
@@ -51,20 +52,18 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 .hamburger {
   position: absolute;
-  padding: 1.6vh 3vw;
+  padding: 1.4vh 3vw;
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  font-size: 2.5vh;
+  border: 0.1vh solid rgb(15, 81, 181);
 }
 
-.bar1, .bar2, .bar3{
+.bar{
   width: 35px;
   height: 5px;
   background-color: rgb(255, 255, 255);
   margin: 1vh 0;
 }
-
-
 /*header end*/
 
 /*home contact and projectPage layout*/
@@ -77,10 +76,10 @@ h2, h3, p{color:rgb(255, 255, 255);}
 /* end of home contact and projectPage layout*/
 
 /*home page only*/
-#mySection img{ max-width: 100%;}
+.mySection img{ max-width: 100%;}
 .skills{margin: 4vh 0vw;}
 
-#viewProjects div{
+.viewProjects div{
   border: 0.1vh solid rgb(255, 255, 255);
   border-radius: 1.5vh;
   cursor: pointer;
@@ -88,7 +87,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
   padding: 1vh 2vw;
 }
 
-#viewProjects div:hover {background: rgb(0, 0, 0);}
+.viewProjects div:hover {background: rgb(0, 0, 0);}
 /*home page only end*/
 
 /*project page*/
@@ -184,22 +183,20 @@ h2, h3, p{color:rgb(255, 255, 255);}
     align-items: center;
   }
 
-  .logo {text-align: center;}
-
   .headerRight {flex-direction: row;}
 
   .link{width: auto;}
 
   .hamburger {display: none;}
 
-  #mySection{
+  .mySection{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4vh 12vw;
   }
 
-  #mySection img{ width: 100vw;}
+  .mySection img{ width: 100vw;}
 
   .profile, .profileImage{
     display: flex;
@@ -207,7 +204,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
     align-items: center;
   }
 
-  #viewProjects {
+  .viewProjects {
     display: grid;
     grid-template-columns: auto auto;
   }

@@ -8,9 +8,9 @@ import {project3} from './project3Files';
 function Home(){
     return(
         <div>
-            <div className='homePage'>
+            <div className='homePage' id='mySection'>
                 <h1>Heading</h1>
-                <div id='mySection'>
+                <div className='mySection'>
                     <div className='profile'>
                         <h2>Hi! I'm Jordan</h2>
                         <p>.....</p>
@@ -23,8 +23,9 @@ function Home(){
                     <h2>Tech Stack and Skills</h2>
                     <p>..........................</p>
                 </div>
+                <div id='viewProjects'></div>
                 <h2>View Projects</h2>
-                <div id='viewProjects'>
+                <div className='viewProjects'>
                     <Link className='project'
                     to={`/projects/${project1.name}`}
                     state={{ name: project1.name, 
@@ -72,8 +73,10 @@ function Home(){
                     </Link>
                 </div>
             </div>
-            <div id='about'><About/></div>
-            <div id='contact'><Contact/></div>
+            <div id='about'></div>
+            <div className='about'><About/></div>
+            <div id='contact'></div>
+            <div className='contact'><Contact/></div>
         </div>
     )
 }

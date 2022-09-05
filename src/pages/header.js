@@ -7,20 +7,23 @@ function Header(){
     const [toggleMenu, setToggleMenu] = useState(true);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-    function toggleNav() {
-        setToggleMenu(!toggleMenu);
+    const closeMenu = (e) => {
+        if(e.target.className != "hamburger" &&
+            e.target.className != "bar"){
+            setToggleMenu(true);
+        }
     }
 
-    useEffect(() => {
+    function changeWidth(){setScreenWidth(window.innerWidth);}
 
-        const changeWidth = () => {
-          setScreenWidth(window.innerWidth);
-        }
-    
-        window.addEventListener('resize', changeWidth)
-        
+    useEffect(() => {
+        window.addEventListener('resize', changeWidth);
+        document.body.addEventListener('click', closeMenu);
+
+        // recommended, if the component gets destroyed,  it'll remove the event listeners from the memory
         return () => {
-            window.removeEventListener('resize', changeWidth)
+            window.removeEventListener('resize', changeWidth);
+            document.body.removeEventListener('click', closeMenu);
         }
     }, [])
   
@@ -29,11 +32,11 @@ function Header(){
             <HashLink to='/#mySection' className='logo'>
                 Jordan
             </HashLink>
-            <div className='hamburger' onClick={()=>toggleNav()}>
-                <div className='bar1'></div>
-                <div className='bar2'></div>
-                <div className='bar3'></div>
-            </div>
+            <button className='hamburger' onClick={()=> setToggleMenu(toggleMenu => !toggleMenu)}>
+                <div className='bar'></div>
+                <div className='bar'></div>
+                <div className='bar'></div>
+            </button>
             {(!toggleMenu || screenWidth > 768) && (
                 <div className='headerRight'>
                     <HashLink to='/#viewProjects' className='link'>
@@ -47,14 +50,7 @@ function Header(){
                     </HashLink> 
                 </div>
             )}
-            
         </nav>
     )
 }
-export default Header; /*<div className='hamburger' onClick={()=> showMenu()}>
-<div className='bar1'></div>
-<div className='bar2'></div>
-<div className='bar3'></div>
-</div>
-
-<div className='headerRight'>*/
+export default Header;
