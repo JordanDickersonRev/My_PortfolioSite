@@ -16,12 +16,12 @@ function Home(){
             <div className='homePage' id='mySection'>
                 <h1>Junior Developer</h1>
                 <div className='mySection'>
+                    <div className='profileImage'>
+                        <img src={require('../images/11.png')} alt={'Profile Pic'}/>
+                    </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
                         <p>My goal is to become a web developer where I can deliver business valve while also leveling up my skills as a developer.</p>
-                    </div>
-                    <div className='profileImage'>
-                        <img src={require('../images/11.png')} alt={'Profile Pic'}/>
                     </div>
                 </div>
                 <div className='skills'>

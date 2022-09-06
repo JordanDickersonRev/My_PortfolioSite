@@ -64,7 +64,7 @@ h2, h3, p{color:#000000;}
 }
 /*header end*/
 
-/*home contact and projectPage layout*/
+/*home and contact layout*/
 .homePage, .contact{
   background: #c0c0c0;
   padding: 1vh 5vw 4vh;
@@ -72,27 +72,20 @@ h2, h3, p{color:#000000;}
   flex-direction: column;
   text-align: center;
 }
-
-/* end of home contact and projectPage layout*/
+/* end of home and contact layout*/
 
 /*home page only*/
-
-.mySection {}
-
 .profile {text-align: left;}
 
 .profileImage img {
-  /*max-width: 100%;*/
-  width: 60vw; 
+  max-width: 45%; 
   border-radius: 4vh;
   border: 0.4vh solid #000000;
 }
 
 .skills{margin: 4vh 0vw;}
 
-.skillsSection1 {
-  text-align: left;
-}
+.skillsSection1 {text-align: left;}
 
 .skillsSection2 {
   display: grid;
@@ -110,7 +103,7 @@ h2, h3, p{color:#000000;}
   text-align: left;
 }
 
-.viewProjects div:hover {background: rgb(0, 0, 0);}
+/*.viewProjects div:hover {background: rgb(0, 0, 0);}
 /*home page only end*/
 
 /*project page*/
@@ -141,7 +134,7 @@ h2, h3, p{color:#000000;}
 
 /*about*/
 .about{ 
-  background: rgb(0, 0, 0);
+  background: #151515;
   display: flex;
   flex-direction: column;
   padding: 4vh 5vw;
@@ -207,6 +200,10 @@ h2, h3, p{color:#000000;}
 /*contact end*/
 
 /*Responsive*/
+@media screen and (min-width: 500px){
+  .about p {font-size: 3vh;}
+}
+  
 @media only screen and (min-width: 769px){
   .header {
     flex-direction: row;
@@ -223,20 +220,18 @@ h2, h3, p{color:#000000;}
 
   .hamburger {display: none;}
 
-  /*.homePage {padding: 1vh 5vw 4vh}*/
+  .homePage, .about, .projectPage {padding: 1vh 15vw 4vh}
 
   .mySection{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*align-items: center;
-    padding: 4vh 12vw;*/
+    padding: 0vh 10vw;
+    align-items: center;
   }
 
-  .profile{
-    
-  }
+  .profile{padding-left: 5vw;}
 
-  .profileImage img{ max-width: 50vw;}
+  .profileImage img{ max-width: 25vw;}
 
   .skillsSection2 {grid-template-columns: 1fr 1fr 1fr 1fr;}
   
@@ -244,8 +239,6 @@ h2, h3, p{color:#000000;}
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  /*.projectPage{padding: 1vh 25vw 4vh;}*/
 
   .contact-section1{grid-template-columns: auto auto;}
 }
