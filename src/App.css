@@ -1,28 +1,24 @@
 *{
-  text-align: center;
   scroll-behavior: smooth;
   text-decoration: none;
 }
 
 h1 {
-  color:rgb(255, 255, 255);
+  color:#000000;
   margin-top: 12vh;
 } 
 
-h2, h3, p{color:rgb(255, 255, 255);}
-
-/*All Links in app*/
-
-/*Links end*/
+h2, h3, p{color:#000000;}
 
 /*header*/
 .header {
   display: flex;
   flex-direction: column;
-  background: rgb(15, 81, 181);
+  background: #24344d;
   position: fixed;
   width: 100vw;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .logo {
@@ -37,24 +33,27 @@ h2, h3, p{color:rgb(255, 255, 255);}
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 
 .link {
-  width: 100vw; 
-  padding: 3vh 2vw;
+  width: 93.7vw; 
+  padding: 3vh 3vw;
   font-size: 2.5vh;
   color: rgb(255, 255, 255);
+  background-color: black;
   cursor: pointer;
+  border-bottom: 0.1vh solid #24344d;
 }
 
-.link:hover{ background: rgb(0, 0, 0);}
+.link:hover{ opacity: 70%;}
 
 .hamburger {
   position: absolute;
-  padding: 1.4vh 3vw;
+  padding: 1.150vh 3vw;
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  border: 0.1vh solid rgb(15, 81, 181);
+  border: 0.1vh solid #24344d;
 }
 
 .bar{
@@ -67,26 +66,33 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 /*home contact and projectPage layout*/
 .homePage, .contact{
-  background: rgb(0, 0, 54);
-  padding: 1vh 15vw 4vh;
+  background: #c0c0c0;
+  padding: 1vh 5vw 4vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
+
 /* end of home contact and projectPage layout*/
 
 /*home page only*/
 
-.profileImage{ 
-  
-}
+.mySection {}
+
+.profile {text-align: left;}
 
 .profileImage img {
-  max-width: 100%; 
+  /*max-width: 100%;*/
+  width: 60vw; 
   border-radius: 4vh;
-  border: 0.4vh solid rgb(255, 255, 255);
+  border: 0.4vh solid #000000;
 }
 
 .skills{margin: 4vh 0vw;}
+
+.skillsSection1 {
+  text-align: left;
+}
 
 .skillsSection2 {
   display: grid;
@@ -96,11 +102,12 @@ h2, h3, p{color:rgb(255, 255, 255);}
 .skillsSection2 img { max-width: 50%;}
 
 .viewProjects div{
-  border: 0.1vh solid rgb(255, 255, 255);
+  border: 0.1vh solid #000000;
   border-radius: 1.5vh;
   cursor: pointer;
   margin: 1vh 1vw 4vh;
   padding: 1vh 2vw;
+  text-align: left;
 }
 
 .viewProjects div:hover {background: rgb(0, 0, 0);}
@@ -108,7 +115,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 /*project page*/
 .projectPage{
-  background: rgb(0, 0, 54);
+  background: #c0c0c0;
   padding: 1vh 5vw 4vh;
   display: flex;
   flex-direction: column;
@@ -137,7 +144,15 @@ h2, h3, p{color:rgb(255, 255, 255);}
   background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  padding: 4vh 15vw;
+  padding: 4vh 5vw;
+}
+.about h2 {
+  text-align: center;
+  color:#ffffff;
+}
+.about p {
+  font-size: 2.5vh;
+  color:#ffffff;
 }
 /*about end*/
 
@@ -161,22 +176,22 @@ h2, h3, p{color:rgb(255, 255, 255);}
   padding: 1vh 0vw;
   font-size: 2vh;
   width: 60vw;
-  border: 0.1vh solid rgb(255, 255, 255);
-  background:rgb(0, 0, 54);
-  color: rgb(255, 255, 255);
+  border: 0.1vh solid #000000;
+  background:#c0c0c0;
+  color: #000000;
   cursor: pointer;
 }
 
-.contact button:hover{ background:rgb(0, 0, 0);}
+/*.contact button:hover{ color: # ;}*/
 
 .contact-item1, .contact-item2,
 .contact-item3, .contact-item4 {
   text-align: left;
   padding: 1.5vh 1.5vw;
   font-size: 2vh;
-  border: 0.1vh solid rgb(255, 255, 255);
-  background:rgb(0, 0, 54);
-  color: rgb(255, 255, 255);
+  border: 0.1vh solid #000000;
+  background:#c0c0c0;
+  color: #000000;
 }
 
 .contact-item3 {
@@ -186,7 +201,7 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
 #error {
   font-size: 2.5vh;
-  color:rgb(255, 255, 255);
+  color:#000000;
   margin: 3vh 0vw;
 }
 /*contact end*/
@@ -201,31 +216,27 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
   .headerRight {flex-direction: row;}
 
-  .link{width: auto;}
+  .link{
+    width: auto;
+    background: none;
+  }
 
   .hamburger {display: none;}
 
+  /*.homePage {padding: 1vh 5vw 4vh}*/
+
   .mySection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4vh 12vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*align-items: center;
+    padding: 4vh 12vw;*/
   }
 
   .profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
   }
 
-  .profileImage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70vw;
-  }
-
-  .profileImage img{ width: 100vw;}
+  .profileImage img{ max-width: 50vw;}
 
   .skillsSection2 {grid-template-columns: 1fr 1fr 1fr 1fr;}
   
