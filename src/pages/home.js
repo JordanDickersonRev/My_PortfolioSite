@@ -6,22 +6,34 @@ import {project2} from './project2Files';
 import {project3} from './project3Files';
 
 function Home(){
+
+    const skills = `The languages, tools and technologies I use to bring products to life.
+        This list only reflects the skills I use the most. View my resume to see more of my 
+        skills. I can use or learn any language, tools or technology. I do not have preferences.`;
+
     return(
         <div>
             <div className='homePage' id='mySection'>
-                <h1>Heading</h1>
+                <h1>Junior Developer</h1>
                 <div className='mySection'>
                     <div className='profile'>
-                        <h2>Hi! I'm Jordan</h2>
-                        <p>.....</p>
+                        <h2>Hi, I'm Jordan</h2>
+                        <p>My goal is to become a web developer where I can deliver business valve while also leveling up my skills as a developer.</p>
                     </div>
                     <div className='profileImage'>
-                        <img src={require('../images/1.png')} alt={'Profile Pic'}/>
+                        <img src={require('../images/11.png')} alt={'Profile Pic'}/>
                     </div>
                 </div>
                 <div className='skills'>
-                    <h2>Tech Stack and Skills</h2>
-                    <p>..........................</p>
+                    <h2>My Skills</h2>
+                    <p>{skills}</p>
+                    <img src={require('../images/html.png')} alt={'Html Logo'}/>
+                    <img src={require('../images/css.png')} alt={'CSS Logo'}/>
+                    <img src={require('../images/javascript.png')} alt={'Javascript Logo'}/>
+                    <img src={require('../images/react.png')} alt={'React Logo'}/>
+                    <img src={require('../images/node.png')} alt={'Node Logo'}/>
+                    <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
+                    <img src={require('../images/github.png')} alt={'Github Logo'}/>
                 </div>
                 <div id='viewProjects'></div>
                 <h2>View Projects</h2>
