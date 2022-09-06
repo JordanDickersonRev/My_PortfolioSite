@@ -8,8 +8,9 @@ import {project3} from './project3Files';
 function Home(){
 
     const skills = `The languages, tools and technologies I use to bring products to life.
-        This list only reflects the skills I use the most. View my resume to see more of my 
-        skills. I can use or learn any language, tools or technology. I do not have preferences.`;
+        This list only reflects the skills I use the most. View my resume in the about section 
+        to see more of my skills. I can use learn any language, tools or technology. I do 
+        not have preferences.`;
 
     return(
         <div>
@@ -17,7 +18,7 @@ function Home(){
                 <h1>Junior Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
-                        <img src={require('../images/11.png')} alt={'Profile Pic'}/>
+                        <img src={require('../images/1.png')} alt={'Profile Pic'}/>
                     </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
@@ -54,6 +55,7 @@ function Home(){
                         <div>
                             <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
                             <p>MySql</p>
+                            <div id='viewProjects'></div>
                         </div>
                         <div>
                             <img src={require('../images/github.png')} alt={'Github Logo'}/>
@@ -61,7 +63,6 @@ function Home(){
                         </div>
                     </div>
                 </div>
-                <div id='viewProjects'></div>
                 <h2>View Projects</h2>
                 <div className='viewProjects'>
                     <Link className='project'
@@ -110,8 +111,8 @@ function Home(){
                         </div>   
                     </Link>
                 </div>
+                <div id='about'></div>
             </div>
-            <div id='about'></div>
             <div className='about'><About/></div>
             <div id='contact'></div>
             <div className='contact'><Contact/></div>

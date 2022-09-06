@@ -41,9 +41,8 @@ h2, h3, p{color:#000000;}
   padding: 3vh 3vw;
   font-size: 2.5vh;
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: #151515;
   cursor: pointer;
-  border-bottom: 0.1vh solid #24344d;
 }
 
 .link:hover{ opacity: 70%;}
@@ -51,7 +50,7 @@ h2, h3, p{color:#000000;}
 .hamburger {
   position: absolute;
   padding: 1.150vh 3vw;
-  background: rgb(0, 0, 0);
+  background: #151515;
   color: rgb(255, 255, 255);
   border: 0.1vh solid #24344d;
 }
@@ -220,7 +219,7 @@ h2, h3, p{color:#000000;}
 
   .hamburger {display: none;}
 
-  .homePage, .about, .projectPage {padding: 1vh 15vw 4vh}
+  .homePage, .projectPage {padding: 1vh 15vw 4vh;}
 
   .mySection{
     display: grid;
@@ -239,6 +238,8 @@ h2, h3, p{color:#000000;}
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .about {padding: 4vh 10vw;}
 
   .contact-section1{grid-template-columns: auto auto;}
 }
