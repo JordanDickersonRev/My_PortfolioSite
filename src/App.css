@@ -77,13 +77,23 @@ h2, h3, p{color:rgb(255, 255, 255);}
 /*home page only*/
 
 .profileImage{ 
-  border: 0.1vh solid rgb(255, 255, 255);
-  border-radius: 4vh;
+  
 }
 
-.profileImage img {max-width: 100%;}
+.profileImage img {
+  max-width: 100%; 
+  border-radius: 4vh;
+  border: 0.4vh solid rgb(255, 255, 255);
+}
 
 .skills{margin: 4vh 0vw;}
+
+.skillsSection2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skillsSection2 img { max-width: 50%;}
 
 .viewProjects div{
   border: 0.1vh solid rgb(255, 255, 255);
@@ -217,9 +227,11 @@ h2, h3, p{color:rgb(255, 255, 255);}
 
   .profileImage img{ width: 100vw;}
 
+  .skillsSection2 {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  
   .viewProjects {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   /*.projectPage{padding: 1vh 25vw 4vh;}*/

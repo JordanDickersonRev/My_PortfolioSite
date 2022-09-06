@@ -25,15 +25,41 @@ function Home(){
                     </div>
                 </div>
                 <div className='skills'>
-                    <h2>My Skills</h2>
-                    <p>{skills}</p>
-                    <img src={require('../images/html.png')} alt={'Html Logo'}/>
-                    <img src={require('../images/css.png')} alt={'CSS Logo'}/>
-                    <img src={require('../images/javascript.png')} alt={'Javascript Logo'}/>
-                    <img src={require('../images/react.png')} alt={'React Logo'}/>
-                    <img src={require('../images/node.png')} alt={'Node Logo'}/>
-                    <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
-                    <img src={require('../images/github.png')} alt={'Github Logo'}/>
+                    <div className='skillsSection1'>
+                        <h2>My Skills</h2>
+                        <p>{skills}</p>
+                    </div>
+                    
+                    <div className='skillsSection2'>
+                        <div>
+                            <img src={require('../images/html.png')} alt={'Html Logo'}/>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/css.png')} alt={'CSS Logo'}/>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/javascript.png')} alt={'Javascript Logo'}/>
+                            <p>Javascript</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/react.png')} alt={'React Logo'}/>
+                            <p>React</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/node.png')} alt={'Node Logo'}/>
+                            <p>Node.js</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
+                            <p>MySql</p>
+                        </div>
+                        <div>
+                            <img src={require('../images/github.png')} alt={'Github Logo'}/>
+                            <p>Github</p>
+                        </div>
+                    </div>
                 </div>
                 <div id='viewProjects'></div>
                 <h2>View Projects</h2>
