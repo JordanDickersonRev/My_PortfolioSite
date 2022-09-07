@@ -72,6 +72,8 @@ h2, h3, p{color:#000000;}
   flex-direction: column;
   text-align: center;
 }
+
+.homePage p, .contact p {line-height: 3.5vh;}
 /* end of home and contact layout*/
 
 /*home page only*/
@@ -101,9 +103,11 @@ h2, h3, p{color:#000000;}
   margin: 1vh 1vw 4vh;
   padding: 1vh 2vw;
   text-align: left;
+  box-shadow:  10px 10px #24344d;
+  transition: border 1s, box-shadow 1s;
 }
 
-/*.viewProjects div:hover {background: rgb(0, 0, 0);}
+
 /*home page only end*/
 
 /*project page*/
@@ -119,6 +123,7 @@ h2, h3, p{color:#000000;}
 .projectPage p {
   text-align: left;
   font-size: 3vh;
+  line-height: 5vh;
 }
 .projectPage h1 { 
   margin: 15vh 0vw 2vh;
@@ -146,6 +151,20 @@ h2, h3, p{color:#000000;}
 .about p {
   font-size: 2.5vh;
   color:#ffffff;
+  line-height: 5vh;
+}
+
+.about a {
+  font-weight: bold;
+  margin-top: 5vh;
+  background: #c0c0c0;
+  color: #151515;
+  border-radius: 1.5vh;
+  cursor: pointer;
+  padding: 2vh 2vw;
+  box-shadow:  10px 10px #24344d;
+  transition: box-shadow 1s;
+  text-align: center;
 }
 /*about end*/
 
@@ -173,9 +192,9 @@ h2, h3, p{color:#000000;}
   background:#c0c0c0;
   color: #000000;
   cursor: pointer;
-}
 
-/*.contact button:hover{ color: # ;}*/
+
+}
 
 .contact-item1, .contact-item2,
 .contact-item3, .contact-item4 {
@@ -249,8 +268,17 @@ h2, h3, p{color:#000000;}
     grid-template-columns: 1fr 1fr;
   }
 
+  .viewProjects div:hover {
+    border: 0.1vh solid #b78428;
+    box-shadow:  10px 10px #b78428;
+  }
+
   .about {padding: 4vh 10vw;}
+  
+  .about a:hover {box-shadow:  10px 10px #b78428;}
 
   .contact-section1{grid-template-columns: auto auto;}
+
+  /*.contact button:hover{ color: # ;}*/
 }
 /* End of Responsive */

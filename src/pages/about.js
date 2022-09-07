@@ -12,7 +12,7 @@ function About(){
             <h2>About Me</h2>
             <p>{about}</p>
             <a href="https://docs.google.com/document/d/1c42Q2Q_JTJv5vsUnlJVDl8G7-qhV8ccLAuBDVIPvHYI/edit">
-                Click here to view my resume.
+                View my resume
             </a>
         </div>
     )
