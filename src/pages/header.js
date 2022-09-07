@@ -29,14 +29,14 @@ function Header(){
   
     return (
         <nav className="header">
-            <HashLink to='/#mySection' className='logo'>
-                Jordan
-            </HashLink>
             <button className='hamburger' onClick={()=> setToggleMenu(toggleMenu => !toggleMenu)}>
                 <div className='bar'></div>
                 <div className='bar'></div>
                 <div className='bar'></div>
             </button>
+            <HashLink to='/#mySection' className='logo'>
+                Jordan
+            </HashLink>
             {(!toggleMenu || screenWidth > 768) && (
                 <div className='headerRight'>
                     <HashLink to='/#viewProjects' className='link'>
