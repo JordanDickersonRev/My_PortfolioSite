@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import React, {useState, useEffect} from 'react';
 
@@ -8,8 +7,8 @@ function Header(){
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     const closeMenu = (e) => {
-        if(e.target.className != "hamburger" &&
-            e.target.className != "bar"){
+        if(e.target.className !== "hamburger" &&
+            e.target.className !== "bar"){
             setToggleMenu(true);
         }
     }

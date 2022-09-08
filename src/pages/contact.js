@@ -2,7 +2,7 @@ import {send} from 'emailjs-com';
 import { useState } from 'react';
 
 function Contact(){
-
+    
     const [toSend, setToSend] = useState({
         from_name: '',
         to_name: '',

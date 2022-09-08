@@ -9,8 +9,8 @@ function Home(){
 
     const skills = `The languages, tools and technologies I use to bring products to life.
         This list only reflects the skills I use the most. View my resume in the about section 
-        to see more of my skills. I can use learn any language, tools or technology. I do 
-        not have preferences.`;
+        to see more of my skills. I can learn any language, tools or technology, I do not have 
+        preferences.`;
 
     return(
         <div>
@@ -55,13 +55,13 @@ function Home(){
                         <div>
                             <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
                             <p>MySql</p>
-                            <div id='viewProjects'></div>
                         </div>
                         <div>
                             <img src={require('../images/github.png')} alt={'Github Logo'}/>
                             <p>Github</p>
                         </div>
                     </div>
+                    <div id='viewProjects'></div>
                 </div>
                 <h2>View Projects</h2>
                 <div className='viewProjects'>

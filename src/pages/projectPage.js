@@ -1,13 +1,17 @@
 import { useLocation } from "react-router-dom"
-import {HashLink} from 'react-router-hash-link';
+import { useRef} from 'react';
 
 function ProjectPage(){
     const location = useLocation();
     const { name, summary, process, difficulties, future, video, code} = location.state;
-    
+    const ref = useRef(null);
+
+    function viewVideo(){ ref.current?.scrollIntoView();}
+
     return(
         <div className="projectPage">
             <h1>{name}</h1>
+            <h3 onClick={()=> viewVideo()}>Skip to Video</h3>
             <div className="summary">
                 <h2>Summary</h2>
                 <p>{summary}</p>
@@ -26,13 +30,10 @@ function ProjectPage(){
                 <h2>Future Plans</h2>
                 <p>{future}</p>
             </div>
-            <div id='video'>
+            <div ref={ref}>
                 <h2>Video</h2>
             </div>
         </div>
     )
-
 }
-export default ProjectPage; /*<p>{process[0]}</p>
-<br/>
-<p>{process[1]}</p> */
+export default ProjectPage;

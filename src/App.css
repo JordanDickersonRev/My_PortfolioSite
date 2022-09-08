@@ -135,6 +135,11 @@ h2, h3, p{color:#000000;}
   font-size: 4vh;
   text-align: left;
 }
+
+.projectPage h3 {
+  cursor: pointer;
+  transition: color 1s;
+}
 /*end of project page*/
 
 /*about*/
@@ -154,7 +159,7 @@ h2, h3, p{color:#000000;}
   line-height: 5vh;
 }
 
-.about a {
+.about a{
   font-weight: bold;
   margin-top: 5vh;
   background: #c0c0c0;
@@ -192,8 +197,7 @@ h2, h3, p{color:#000000;}
   background:#c0c0c0;
   color: #000000;
   cursor: pointer;
-
-
+  margin-top: 3vh;
 }
 
 .contact-item1, .contact-item2,
@@ -272,6 +276,8 @@ h2, h3, p{color:#000000;}
     border: 0.1vh solid #b78428;
     box-shadow:  10px 10px #b78428;
   }
+
+  .projectPage h3:hover {color: #b78428;}
 
   .about {padding: 4vh 10vw;}
   

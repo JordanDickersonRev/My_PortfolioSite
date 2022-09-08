@@ -1,4 +1,5 @@
 function About(){
+
     const about = `It started back in 2019 when I began my computer information systems degree.
         I choose the CIS path to learn about programming, networking, and business. My original
         goal was to become a business analyst, project manager, or a programmer. Python was the
@@ -11,8 +12,8 @@ function About(){
         <div className="about">
             <h2>About Me</h2>
             <p>{about}</p>
-            <a href="https://docs.google.com/document/d/1c42Q2Q_JTJv5vsUnlJVDl8G7-qhV8ccLAuBDVIPvHYI/edit">
-                View my resume
+            <a href="https://docs.google.com/document/d/1Szxt_yNPuAC-2yKfrk46MG3lueX3RqWo447xgCWp9OQ/edit?usp=sharing">
+                View Resume
             </a>
         </div>
     )
