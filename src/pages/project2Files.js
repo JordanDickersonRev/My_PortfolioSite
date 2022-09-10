@@ -1,6 +1,6 @@
 export const project2 = {
     name : `AMD & Intel Web Scraper`,
-    snippet: `AMD & Intel Web Scraper is website that takes the
+    snippet: `AMD & Intel Web Scraper is a website that takes the
         best rated desktops and laptops from AMD and Intel to display
         that information for the client to see. The header...`,
     summary : `AMD & Intel Web Scraper is a website that takes the
@@ -71,6 +71,6 @@ export const project2 = {
         Having a project with actual users would look great in this portfolio. I also want to 
         add custom designs and change the css too. I would of done all of that before but I had to
         move on from this project at that moment.`,
-    video : ``,
-    code : ``
+    video : `webscraper`,
+    code : `https://github.com/TryHardJ/AmdIntelWebScraper`
 };

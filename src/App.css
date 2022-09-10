@@ -103,11 +103,9 @@ h2, h3, p{color:#000000;}
   margin: 1vh 1vw 4vh;
   padding: 1vh 2vw;
   text-align: left;
-  box-shadow:  10px 10px #24344d;
-  transition: border 1s, box-shadow 1s;
+  box-shadow:  5px 5px 5px #24344d;
+  transition: margin 1s, box-shadow 1s;
 }
-
-
 /*home page only end*/
 
 /*project page*/
@@ -136,9 +134,22 @@ h2, h3, p{color:#000000;}
   text-align: left;
 }
 
-.projectPage h3 {
+.projectPage button {
   cursor: pointer;
-  transition: color 1s;
+  font-size: 2vh;
+  padding: 1vh 2vw;
+  width: 35%;
+  border-radius: 1vh;
+  border: 0.4vh solid #000000;
+  background: #c0c0c0;
+  font-weight: bold;
+  box-shadow:  10px 10px #24344d;
+  transition: box-shadow 1s;
+}
+
+.projectPage video {
+  max-width: 100%;
+  margin-bottom: 3vh;
 }
 /*end of project page*/
 
@@ -153,6 +164,7 @@ h2, h3, p{color:#000000;}
   text-align: center;
   color:#ffffff;
 }
+
 .about p {
   font-size: 2.5vh;
   color:#ffffff;
@@ -272,12 +284,9 @@ h2, h3, p{color:#000000;}
     grid-template-columns: 1fr 1fr;
   }
 
-  .viewProjects div:hover {
-    border: 0.1vh solid #b78428;
-    box-shadow:  10px 10px #b78428;
-  }
+  .viewProjects div:hover {margin: 0.3vh 0.3vw 4vh;}
 
-  .projectPage h3:hover {color: #b78428;}
+  .projectPage button:hover {box-shadow:  10px 10px #b78428;}
 
   .about {padding: 4vh 10vw;}
   

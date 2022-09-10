@@ -11,7 +11,7 @@ function ProjectPage(){
     return(
         <div className="projectPage">
             <h1>{name}</h1>
-            <h3 onClick={()=> viewVideo()}>Skip to Video</h3>
+            <button onClick={()=> viewVideo()}>Skip to Video</button>
             <div className="summary">
                 <h2>Summary</h2>
                 <p>{summary}</p>
@@ -32,6 +32,12 @@ function ProjectPage(){
             </div>
             <div ref={ref}>
                 <h2>Video</h2>
+                <video controls
+                    src={require(`/videos/${video}.mp4`)}
+                    type="video/mp4">
+                        Your browser does not support this video.
+                </video>
+                <a href={code}><button>Source Code</button></a>
             </div>
         </div>
     )

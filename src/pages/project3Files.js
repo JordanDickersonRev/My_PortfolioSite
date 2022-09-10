@@ -83,6 +83,6 @@ export const project3 = {
         That goal changed when I realized this project was going to take longer than expected.
         I want to add calculations like sin, cos, tan, EXP, e and more in the future. The only
         reason I moved on is because I had to add more projects to my portfolio.`,
-    video : ``,
-    code : ``
+    video : `calculator`,
+    code : `https://github.com/TryHardJ/Calculator-App`
 };

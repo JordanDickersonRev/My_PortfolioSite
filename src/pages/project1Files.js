@@ -106,6 +106,6 @@ export const project1 = {
         uses firebase. I've seen people do user authentication with npm local-stoarge and I know 
         that's not the right way to do it. I will dive deeper into node so I can learn this 
         the proper way.`,
-    video : ``,
-    code : ``
+    video : `ecommerce`,
+    code : `https://github.com/TryHardJ/E_Commerce_WebSite`
 };
