@@ -121,7 +121,7 @@ h2, h3, p{color:#000000;}
   flex-direction: column;
 }
 
-.projectPage div { margin: 6vh 0vw 4vh;}
+.projectPage div { margin: 6vh 0vw 0.2vh;}
 
 .projectPage p {
   text-align: left;
