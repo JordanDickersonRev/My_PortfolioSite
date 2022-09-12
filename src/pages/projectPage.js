@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom"
 import { useRef} from 'react';
+import ScrollToTop from './scrollToTop';
 
 function ProjectPage(){
     const location = useLocation();
@@ -10,6 +11,7 @@ function ProjectPage(){
 
     return(
         <div className="projectPage">
+            <ScrollToTop/>
             <h1>{name}</h1>
             <button onClick={()=> viewVideo()}>Skip to Video</button>
             <div className="summary">
