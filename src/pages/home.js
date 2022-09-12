@@ -7,9 +7,9 @@ import {project3} from './project3Files';
 
 function Home(){
 
-    const skills = `The languages, tools and technologies I use to bring products to life.
+    const skills = `These are the languages, tools, and technologies I use to bring products to life.
         This list only reflects the skills I use the most. View my resume in the about section 
-        to see more of my skills. I can learn any language, tools or technology, I do not have 
+        to see more of my skills. I can learn any language, tools, or technology, I do not have 
         preferences.`;
 
     return(
@@ -66,8 +66,8 @@ function Home(){
                 <h2>View Projects</h2>
                 <div className='viewProjects'>
                     <Link className='project'
-                    to={`/projects/${project1.name}`}
-                    state={{ name: project1.name, 
+                        to={`/projects/${project1.name}`}
+                        state={{ name: project1.name, 
                             summary: project1.summary,
                             process: project1.process,
                             difficulties: project1.difficulties,
@@ -81,8 +81,8 @@ function Home(){
                         </div>
                     </Link>
                     <Link className='project'
-                    to={`/projects/${project2.name}`}
-                    state={{ name: project2.name, 
+                        to={`/projects/${project2.name}`}
+                        state={{ name: project2.name, 
                             summary: project2.summary,
                             process: project2.process,
                             difficulties: project2.difficulties,
@@ -96,8 +96,8 @@ function Home(){
                         </div>
                     </Link>
                     <Link className='project'
-                    to={`/projects/${project3.name}`}
-                    state={{ name: project3.name,
+                        to={`/projects/${project3.name}`}
+                        state={{ name: project3.name,
                             summary: project3.summary,
                             process: project3.process,
                             difficulties: project3.difficulties,

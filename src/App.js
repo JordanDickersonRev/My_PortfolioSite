@@ -5,13 +5,12 @@ import Home from './pages/home';
 import Header from './pages/header';
 import ScrollToTop from './pages/scrollToTop';
 
-
 function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop/>
         <Header/>
-        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path= '/projects/:projectname' element={<ProjectPage/>}/>

@@ -39,7 +39,7 @@ function Contact(){
                         className='contact-item1'
                         type='text'
                         name='from_name'
-                        placeholder='from name'
+                        placeholder='From name'
                         value={toSend.from_name}
                         onChange={handleChange}
                     />
@@ -48,6 +48,7 @@ function Contact(){
                         type='text'
                         name='to_name'
                         placeholder='to name'
+                        hidden
                         disabled
                         value={toSend.to_name}
                         onChange={handleChange}

@@ -305,7 +305,7 @@ h2, h3, p{color:#000000;}
   
   .about a:hover {box-shadow:  10px 10px #b78428;}
 
-  .contact-section1{grid-template-columns: auto auto;}
+  /*.contact-section1{grid-template-columns: auto auto;}*/
 
   /*.contact button:hover{ color: # ;}*/
 }
