@@ -77,7 +77,7 @@ function Home(){
                         }}>
                         <div>
                             <h3>{project1.name}</h3>
-                            <p>{project1.snippet}</p>
+                            <img src={require('../images/ecommerce.png')} alt={'E-commerce website'}/>
                         </div>
                     </Link>
                     <Link className='project'
@@ -92,7 +92,7 @@ function Home(){
                         }}>
                         <div>
                             <h3>{project2.name}</h3>
-                            <p>{project2.snippet}</p>
+                            <img src={require('../images/webscraper.png')} alt={'Web scraper website'}/>
                         </div>
                     </Link>
                     <Link className='project'
@@ -107,7 +107,7 @@ function Home(){
                         }}>
                         <div>
                             <h3>{project3.name}</h3>
-                            <p>{project3.snippet}</p>
+                            <img src={require('../images/calculator.png')} alt={'Calculator'}/>
                         </div>   
                     </Link>
                 </div>

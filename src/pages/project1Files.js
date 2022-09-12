@@ -1,5 +1,5 @@
 export const project1 = {
-    name : `Skate Shop Website`,
+    name : `E-commerce Website`,
     snippet: `SkateHouse is a mock up e-commerce website where 
         clients can buy complete skateboards. Upon entering the 
         cleint will land on the home page which...`,

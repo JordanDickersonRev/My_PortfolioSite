@@ -1,5 +1,5 @@
 export const project2 = {
-    name : `AMD & Intel Web Scraper`,
+    name : `Web Scraper`,
     snippet: `AMD & Intel Web Scraper is a website that takes the
         best rated desktops and laptops from AMD and Intel to display
         that information for the client to see. The header...`,
