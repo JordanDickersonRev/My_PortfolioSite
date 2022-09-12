@@ -5,7 +5,7 @@ function Contact(){
     
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
+        to_name: 'Jordan Dickerson',
         message: '',
         reply_to: '',
     })
@@ -48,6 +48,7 @@ function Contact(){
                         type='text'
                         name='to_name'
                         placeholder='to name'
+                        disabled
                         value={toSend.to_name}
                         onChange={handleChange}
                     />
