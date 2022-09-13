@@ -22,7 +22,7 @@ function Home(){
                     </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
-                        <p>My goal is to become a web developer where I can deliver business valve while also leveling up my skills as a developer.</p>
+                        <p>My goal is to become a web developer where I can deliver business value while also leveling up my skills as a developer.</p>
                     </div>
                 </div>
                 <div className='skills'>

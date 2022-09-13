@@ -1,8 +1,5 @@
 export const project2 = {
     name : `Web Scraper`,
-    snippet: `AMD & Intel Web Scraper is a website that takes the
-        best rated desktops and laptops from AMD and Intel to display
-        that information for the client to see. The header...`,
     summary : `AMD & Intel Web Scraper is a website that takes the
         best rated desktops and laptops from AMD and Intel to display
         that information for the client to see. The header includes a 
@@ -14,7 +11,7 @@ export const project2 = {
         can see the description of the product and the website it came 
         from. Upon clicking on the description, the client will be redirected 
         to the product itself. Currently, this website only scrapes from
-        best buy but the goal is to add more domains. Scroll down to see 
+        Best Buy but the goal is to add more domains. Scroll down to see 
         my future plans for this website.`,
     process : [`The dependencies for this project are express, ejs, axios, and 
         cheerio. Express was used to create seven web pages using the api. The use
@@ -33,7 +30,7 @@ export const project2 = {
         the same html template. For example, the /amddesktop path results variable will
         be different from the /intellaptop results variable, this means that those
         are two different web pages because the paths and the information on them are
-        different, the html template(result page) is the only thing thats the same
+        different, the html template(result page) is the only thing that's the same
         and ejs allows us to do that. Axios fetches data from urls and cheerio picks out
         html elements from urls. These two work perfectly together for this project. For
         example, after I fetch data using axios I take that response.data and assign it
@@ -45,7 +42,7 @@ export const project2 = {
         (response.data variable)). For each tag that comes back I take the text and
         the href (syntax is $(this).text() and $(this).attr('href')). After getting that
         information I push all of it inside an array as object properties and that's how
-        I scrape the best buy website. Now that I have all the scraped information stored
+        I scrape the Best Buy website. Now that I have all the scraped information stored
         inside an array, I use the array as a parameter for my arrayLoop function and
         return the results of that array inside of a variable called results. The arrayLoop
         function also organizes the information of the array into html format. I then take
@@ -54,8 +51,8 @@ export const project2 = {
         The results variable is different in each path because I used different parameters
         in the arrayLoop for each path.`],
     difficulties : `The hardest part about this project was learning how to print variables
-        inside of ejs. This was difficult because I never heard of ejs or JSON.stringify 
-        before this project. Some kind of template for html came accross my mind when
+        inside of ejs. This was difficult because I've never heard of ejs or JSON.stringify 
+        before this project. Some kind of template for html came across my mind when
         I realized that six of the website pages would have the same html, just different
         results. I knew there had to be some kind of html template out there because programming
         always has a template for anything when it comes to repeating the same thing over and 
@@ -65,9 +62,9 @@ export const project2 = {
         after work. Here's the embarrasing part, all I had to do was read all of the information
         I found online and I would of figured it out fast. After that, I learned to never
         skip over any information, even if I am tired.`,
-    future : `I would love to add more websites to the web scraper besides best buy. Any website
+    future : `I would love to add more websites to the web scraper besides Best Buy. Any website
         that gives me permission to scrape from is a plus. The more information, the better the 
-        website. I want to make the website public, that's why adding more sites are important. 
+        website. I want to make the website public, that's why adding more sites is important. 
         Having a project with actual users would look great in this portfolio. I also want to 
         add custom designs and change the css too. I would of done all of that before but I had to
         move on from this project at that moment.`,

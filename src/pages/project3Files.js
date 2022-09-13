@@ -1,12 +1,9 @@
 export const project3 = {
     name : `Calculator`,
-    snippet: `Although this is a basic calculator, I decided to
-        add it to my portfolio because it took longer than expected. This 
-        project does not include any calculations outside of...`,
     summary : `Although this is a basic calculator, I decided to
         add it to my portfolio because it took longer than expected. This 
         project does not include any calculations outside of multiplication,
-        divison, addition and subtraction. Make sure you read each section
+        division, addition, and subtraction. Make sure you read each section
         to understand why I'm proud of this project.`,
     process : [`This calculator was made using react. I created the buttons
         using an object constructor. The constructor takes in four parameters
@@ -32,21 +29,21 @@ export const project3 = {
         shown. How does this work? There is an if statement inside of the calculate
         function that first calls the pemdas function and returns the order of
         how the elements should be calculated. After that, the sumOf function takes
-        the value returned from the pemdas function and calculates the clients
-        answer. If the clients answer does not equal a number then error will
+        the value returned from the pemdas function and calculates the client's
+        answer. If the client's answer does not equal a number then error will
         print in the calculator, I did this using a ternary operator. The calculator
-        array is then reset to empty and the clients total is the first value that
+        array is then reset to empty and the client's total is the first value that
         gets pushed inside of the calculator array. This allows the client to use 
         their original total for another calculation. The client can also choose not
         to use their original total by clicking on the AC button to clear the
         calculator completely. Read the difficulties section to learn how the pemdas
         and sumOf functions were created.`],
     difficulties : `To be honest, I underestimated this project. I didn't think about
-        please excuse my dear aunt sally when I started this. I thought creating a calculator
+        please excuse my dear aunt sally when I started this(pemdas). I thought creating a calculator
         would be as easy as adding variables together in a line of code. The hardest part
         about this project was creating an algorithm for multiple functions. The pemdas
         function starts with two empty arrays, one array for multiplication and divison,
-        and another array for addition and substraction. There is also a for of loop that
+        and another array for addition and subtraction. There is also a for of loop that
         loops through every index in the calculator array. The goal of this loop is to make 
         sure multiplication and division are calculated first. Inside the for of loop, I 
         created two variables that act as counters. I also created an if statement. The if

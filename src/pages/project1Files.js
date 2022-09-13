@@ -1,10 +1,7 @@
 export const project1 = {
     name : `E-commerce Website`,
-    snippet: `SkateHouse is a mock up e-commerce website where 
-        clients can buy complete skateboards. Upon entering the 
-        cleint will land on the home page which...`,
     summary :`SkateHouse is a mock up e-commerce website where 
-        clients can buy complete skateboards. Upon entering the 
+        clients can buy complete skateboards. Upon entering, the 
         client will land on the home page which consist of six links, 
         store, enter the raffle, Twitter, Instagram, Facebook, and 
         Snapchat. The header of the website 
@@ -16,7 +13,7 @@ export const project1 = {
         to that specific skateboard page where they can do four things, 
         specify how many boards they want to order, check if the skateboard
         is left in stock, add it to their bag, and view a bigger picture
-        of the skateboard. The clients bag shows every skateboard that they 
+        of the skateboard. The client's bag shows every skateboard that they 
         added, the total due, and a list of their favorite skateboards if 
         the client is logged in. Clients can also add skateboards to the bag
         from their favorites. Scroll down to see my future plans for this
@@ -29,24 +26,24 @@ export const project1 = {
         pages built from the api.`,
 
         `Backend dependencies include cors, express, mysql, and nodemon.
-        Cors is needed for this website. Without it, I would not be able
+        Cors is needed for this website, without it I would not be able
         to access resources from the frontend files. This is important because
         clients must be able to send a request to the backend(node) and then get a
         response from it. Cors allowed me to relax the security that applies to
         the api by allowing resources from another domain to be accessible.
         Express was used to build three web pages that were created using the api,
         /store, /favorites, and /users. These backend web pages(node files/backend files)
-        gets request and sends responses to the frontend files. One example of this
+        gets requests and sends responses to the frontend files. One example of this
         comes from the /store page. The /store page uses the get, post, and put
         methods from express to select, insert, and update the store in the backend
         web page which then sends a response to the frontend file(store file) in 
         react. I used multiple mysql query statements in the api to store and retrieve 
         records from the database. For example, when a user wants to create an 
         account, that information must be stored in the database. Before that happens, 
-        the api checks if the username or email already exist in the database 
-        from another user. If that information already exist then the api will 
+        the api checks if the username or email already exists in the database 
+        from another user. If that information already exists then the api will 
         send a response message to the frontend files(react files) stating that 
-        the username or email already exist. The query method allows the api to make 
+        the username or email already exists. The query method allows the api to make 
         checks so that the database doesn't have duplicate information, it also holds 
         information like skateboards and favorites.`,
 
@@ -55,7 +52,7 @@ export const project1 = {
         use-local-storage, and web-vitals. The react library is important because 
         it helped me create client-side web files(react files). It also has helpful 
         tools like hooks(useState, useEffect) that makes it easier to give variables 
-        and object properties a value. Axios fetches other domains data and allows
+        and object properties a value. Axios fetches other domain's data and allows
         the client to make http request to backend web pages(node files) and 
         then gets a response from those pages as well. This is why cors from the 
         backend was so important, axios is trying to access or send resources to 
@@ -76,14 +73,14 @@ export const project1 = {
         a username global state to create different routes for clients that are 
         not logged in. If a client is logged in, they can't see the information 
         in the login or signup files because they are already logged in. However, 
-        if they are not logged in, the information on those files will be availble if 
+        if they are not logged in, the information on those files will be available if 
         they visit it. Use-local-storage allowed me to save the theme that the 
         client prefers when they visit the site(light or dark mode). I created
         css variables for light and dark mode, then I created a switch using css.
         If light mode is on when the client clicks the switch then the website
-        will change to dark mode and vice versa. Use-local-storage saves the clients
+        will change to dark mode and vice versa. Use-local-storage saves the client's
         choice to their local storage so that whenever the client visits the website,
-        their prefered mode is already selected. React-dom, react-scripts, and web-vitals 
+        their preferred mode is already selected. React-dom, react-scripts, and web-vitals 
         comes pre-installed with react.`],
     difficulties : `The hardest parts about making this website were creating some of the
         queries for mysql and figuring out how to display images using the database. In
@@ -103,7 +100,7 @@ export const project1 = {
     future : `I'm going to learn JWT access and refresh tokens soon so the client can stay logged
         in even after the page refreshes, or to keep the client logged in for a few days. This is
         the first thing I'm going to learn after I'm finished with my up and coming project that 
-        uses firebase. I've seen people do user authentication with npm local-stoarge and I know 
+        uses firebase. I've seen people do user authentication with npm local-storage and I know 
         that's not the right way to do it. I will dive deeper into node so I can learn this 
         the proper way.`,
     video : `ecommerce`,
