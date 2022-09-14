@@ -64,8 +64,8 @@ h2, h3, p{color:#000000;}
 }
 /*header end*/
 
-/*home and contact layout*/
-.homePage, .contact{
+/*home layout*/
+.homePage{
   background: #c0c0c0;
   padding: 1vh 5vw 4vh;
   display: flex;
@@ -74,7 +74,7 @@ h2, h3, p{color:#000000;}
 }
 
 .homePage p, .contact p {line-height: 3.5vh;}
-/* end of home and contact layout*/
+/* end of home layout*/
 
 /*home page only*/
 .profile {text-align: left;}
@@ -121,7 +121,7 @@ h2, h3, p{color:#000000;}
   flex-direction: column;
 }
 
-.projectPage div { margin: 6vh 0vw 0.2vh;}
+.projectPage div { margin: 6vh 0vw 0vh;}
 
 .projectPage p {
   text-align: left;
@@ -154,7 +154,7 @@ h2, h3, p{color:#000000;}
 
 .projectPage video {
   max-width: 100%;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
 }
 /*end of project page*/
 
@@ -191,6 +191,14 @@ h2, h3, p{color:#000000;}
 /*about end*/
 
 /*contact page*/
+.contact{
+  background: #c0c0c0;
+  padding: 1vh 5vw 10vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .contact h2{margin: 5vh 0vw;}
 
 .contact form{
@@ -241,6 +249,7 @@ h2, h3, p{color:#000000;}
   font-size: 2.5vh;
   color:#000000;
   margin: 3vh 0vw;
+  font-weight: bold;
 }
 /*contact end*/
 

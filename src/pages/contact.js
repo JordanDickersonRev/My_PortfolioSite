@@ -2,7 +2,8 @@ import {send} from 'emailjs-com';
 import { useState } from 'react';
 
 function Contact(){
-    
+
+    const [hidden, setHidden] = useState(false);
     const [toSend, setToSend] = useState({
         from_name: '',
         to_name: 'Jordan Dickerson',
@@ -23,7 +24,10 @@ function Contact(){
                 process.env.REACT_APP_TEMPLATE_ID,
                 toSend,
                 process.env.REACT_APP_USER_ID
-            ).then((response)=>{console.log('SUCCESS!', response.status, response.text);
+            ).then(()=>{
+                document.getElementById('error').innerHTML = `Thank you for contacting me,
+                    I will respond as soon as possible.`;
+                setHidden(true);
             }).catch((err)=>{document.getElementById('error').innerHTML = `FAILED..., ${err}`;});
         }
     };
@@ -33,6 +37,7 @@ function Contact(){
     return (
         <div className="contact">
             <h2>Contact Me</h2>
+            {!hidden && 
             <form onSubmit={onSubmit}>
                 <div className='contact-section1'>
                     <input
@@ -71,7 +76,7 @@ function Contact(){
                     onChange={handleChange}
                 />
                 <button type='submit'>Submit</button>
-            </form>
+            </form>}
             <div id='error'></div>
         </div>
     )
