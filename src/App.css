@@ -20,6 +20,7 @@ h2, h3, p{color:#000000;}
   text-transform: uppercase;
   text-align: right;
   height: 9vh;
+  z-index: 1;
 }
 
 .logo {
@@ -193,7 +194,7 @@ h2, h3, p{color:#000000;}
 /*contact page*/
 .contact{
   background: #c0c0c0;
-  padding: 1vh 5vw 10vh;
+  padding: 1vh 5vw 20vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -314,8 +315,6 @@ h2, h3, p{color:#000000;}
   
   .about a:hover {box-shadow:  10px 10px #b78428;}
 
-  /*.contact-section1{grid-template-columns: auto auto;}*/
-
-  /*.contact button:hover{ color: # ;}*/
+  .contact{padding: 1vh 5vw 4vh;}
 }
 /* End of Responsive */
