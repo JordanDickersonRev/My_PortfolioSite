@@ -15,10 +15,10 @@ function Home(){
     return(
         <div>
             <div className='homePage' id='mySection'>
-                <h1>Junior Developer</h1>
+                <h1>Full-Stack Software Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
-                        <img src={require('../images/1.png')} alt={'Profile Pic'}/>
+                        <img src={require('../images/1.jpg')} alt={'Profile Pic'}/>
                     </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
