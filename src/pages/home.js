@@ -69,9 +69,8 @@ function Home(){
                         to={`/projects/${project1.name}`}
                         state={{ name: project1.name, 
                             summary: project1.summary,
-                            process: project1.process,
-                            difficulties: project1.difficulties,
-                            future: project1.future, 
+                            responsibilities: project1.responsibilities,
+                            technologies: project1.technologies,
                             video: project1.video,
                             code: project1.code
                         }}>
@@ -84,9 +83,8 @@ function Home(){
                         to={`/projects/${project2.name}`}
                         state={{ name: project2.name, 
                             summary: project2.summary,
-                            process: project2.process,
-                            difficulties: project2.difficulties,
-                            future: project2.future, 
+                            responsibilities: project2.responsibilities,
+                            technologies: project2.technologies,
                             video: project2.video,
                             code: project2.code
                         }}>
@@ -97,13 +95,7 @@ function Home(){
                     </Link>
                     <Link className='project'
                         to={`/projects/${project3.name}`}
-                        state={{ name: project3.name,
-                            summary: project3.summary,
-                            process: project3.process,
-                            difficulties: project3.difficulties,
-                            future: project3.future,
-                            video: project3.video,
-                            code: project3.code
+                        state={{ 
                         }}>
                         <div>
                             <h3>{project3.name}</h3>

@@ -4,7 +4,7 @@ import ScrollToTop from './scrollToTop';
 
 function ProjectPage(){
     const location = useLocation();
-    const { name, summary, process, difficulties, future, video, code} = location.state;
+    const { name, summary, responsibilities, technologies, video, code} = location.state;
     const ref = useRef(null);
 
     function viewVideo(){ ref.current?.scrollIntoView();}
@@ -18,19 +18,22 @@ function ProjectPage(){
                 <h2>Summary</h2>
                 <p>{summary}</p>
             </div>
-            <div className="process">
-                <h2>Process</h2>
-                <p>{process[0]}</p>
-                <p>{process[1]}</p>
-                <p>{process[2]}</p>
+            <div className="responsibilities">
+                <h2>Roles / Responsibilities</h2>
+                <p>{responsibilities[0]}</p>
+                <ul>
+                    <li>{responsibilities[1]}</li>
+                    <li>{responsibilities[2]}</li>
+                    <li>{responsibilities[3]}</li>
+                    <li>{responsibilities[4]}</li>
+                    <li>{responsibilities[5]}</li>
+                    <li>{responsibilities[6]}</li>
+                    <li>{responsibilities[7]}</li>
+                </ul>
             </div>
-            <div className="difficulties">
-                <h2>Difficulties</h2>
-                <p>{difficulties}</p>
-            </div>
-            <div className="futurePlans">
-                <h2>Future Plans</h2>
-                <p>{future}</p>
+            <div className="technologies">
+                <h2>Environment / Technologies</h2>
+                <p>{technologies}</p>
             </div>
             <div ref={ref}>
                 <h2>Video</h2>
