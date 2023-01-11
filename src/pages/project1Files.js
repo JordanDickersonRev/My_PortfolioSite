@@ -1,32 +1,24 @@
 export const project1 = {
-    name : `E-commerce Website`,
-    summary :`SkateHouse is a mock up e-commerce website where 
-        clients can buy complete skateboards. Upon entering, the 
-        client will land on the home page which consist of six links, 
-        store, enter the raffle, Twitter, Instagram, Facebook, and 
-        Snapchat. The header of the website 
-        has five links, log in, sign up, home, store, and bag. The 
-        store page has a collection of complete skateboards that the 
-        clients can pick from. If the client is looking for a particular 
-        skateboard size, the store has six sizes that they can look 
-        through. When clicking on a skateboard, the client will be taken 
-        to that specific skateboard page where they can do four things, 
-        specify how many boards they want to order, check if the skateboard
-        is left in stock, add it to their bag, and view a bigger picture
-        of the skateboard. The client's bag shows every skateboard that they 
-        added, the total due, and a list of their favorite skateboards if 
-        the client is logged in. Clients can also add skateboards to the bag
-        from their favorites. Scroll down to see my future plans for this
-        website.`,
-    responsibilities : [`Owner/Developer`, 
-        `Built the database and tables in MySQL Workbench`,
-        `Built the api with necessary http request`,
-        `Built logic to allow the front-end to make http request to the back-end`,
-        `Built the front-end as a single page application using React`,
-        `Designed and Developed each component of the single page application`,
-        `Developed a responsive front-end`,
-        `Developed Light/Dark Mode using Use-Local-Stoarge`],
-    technologies : `React, JavaScript, HTML, CSS, MySQL, Node.js, Express, Cors, Axios, Use-Local-Storage`,
-    video : `ecommerce`,
-    code : `https://github.com/JordanDickersonRev/E_Commerce_WebSite`
+    name : `Employee Reimbursement Service`,
+    summary :`This project is an API for employees to submit reimbursement requests and
+        managers to approve or deny the submitted request. Employees or Managers, can register
+        with a unique email and password combination, and log into the application with said 
+        combination. Employees can submit a new reimbursement ticket with a type(travel, food, car rental, etc),
+        a dollar amount, a description, and a default status of "Pending". Employees can view
+        all of their previous reimbursement ticket submissions, filter the list of tickets by 
+        status(pending, approved, or denied), and edit their first and last name. As a manager, you
+        can "approve" or "reject" tickets submitted by employees, and access a queue of pending tickets
+        that only managers can see. When the Employee or Manager logs in, a Jwt sercurity token is
+        returned.`,
+    responsibilities : [`Owner/Developer`,
+                `Built the database and tables in azure data studio`,
+                `Developed the Apilayer, Businesslayer, Repolayer, and Modelslayer using the repository pattern`,
+                `Developed every action method for the controllers`,
+                `Developed DQL and DML to query or manipulate SQL in the database depending on the action method`,
+                `Built JWT Authentication so that a token is returned every time the client logs in`,
+                `Tested API with Swagger`,
+                `Built custom logger for Repolayer`],
+    technologies : `C#, .NET, ASP.NET Core Web API, ADO.NET, Azure SQL Database, Swagger, xUnit Testing`,
+    video : `Employee Reimbursement Service REST API`,
+    code : `https://github.com/221114-NET/JordanDickersonRevatureProject1`
 };
