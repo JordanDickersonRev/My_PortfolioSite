@@ -1,5 +1,5 @@
 export const project1 = {
-    name : `Employee Reimbursement Service`,
+    name : `Employee Reimbursement Service REST API`,
     summary :`This project is an API for employees to submit reimbursement requests and
         managers to approve or deny the submitted request. Employees or Managers, can register
         with a unique email and password combination, and log into the application with said 
@@ -19,6 +19,6 @@ export const project1 = {
                 `Tested API with Swagger`,
                 `Built custom logger for Repolayer`],
     technologies : `C#, .NET, ASP.NET Core Web API, ADO.NET, Azure SQL Database, Swagger, xUnit Testing`,
-    video : `Employee Reimbursement Service REST API`,
+    video : `ersapi`,
     code : `https://github.com/221114-NET/JordanDickersonRevatureProject1`
 };
