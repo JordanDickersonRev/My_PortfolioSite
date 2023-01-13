@@ -13,11 +13,18 @@ function ProjectPage(){
         <div className="projectPage">
             <ScrollToTop/>
             <h1>{name}</h1>
-            <button onClick={()=> viewVideo()}>Skip to Video</button>
-            <div className="summary">
-                <h2>Summary</h2>
-                <p>{summary}</p>
-            </div>
+
+            { video !== `` &&
+                <button onClick={()=> viewVideo()}>Skip to Video</button>
+            }
+            
+            { summary!== `` &&
+                <div className="summary">
+                    <h2>Summary</h2>
+                    <p>{summary}</p>
+                </div>
+            }
+        
             <div className="responsibilities">
                 <h2>Roles / Responsibilities</h2>
                 <p>{responsibilities[0]}</p>
@@ -35,15 +42,19 @@ function ProjectPage(){
                 <h2>Environment / Technologies</h2>
                 <p>{technologies}</p>
             </div>
-            <div ref={ref}>
-                <h2>Video</h2>
-                <video controls
-                    src={require(`/videos/${video}.mp4`)}
-                    type="video/mp4">
-                        Your browser does not support this video.
-                </video>
-                <a href={code}><button>Source Code</button></a>
-            </div>
+
+            { video !== `` &&
+                <div ref={ref}>
+                    <h2>Video</h2>
+                    <video controls
+                        src={require(`/videos/${video}.mp4`)}
+                        type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+                </div>
+            }
+            
+            <a href={code}><button>Source Code</button></a>
         </div>
     )
 }

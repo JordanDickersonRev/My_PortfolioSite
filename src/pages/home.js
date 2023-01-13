@@ -95,11 +95,15 @@ function Home(){
                     </Link>
                     <Link className='project'
                         to={`/projects/${project3.name}`}
-                        state={{ 
+                        state={{ name: project3.name, 
+                            summary: project3.summary,
+                            responsibilities: project3.responsibilities,
+                            technologies: project3.technologies,
+                            video: project3.video,
+                            code: project3.code
                         }}>
                         <div>
                             <h3>{project3.name}</h3>
-                            
                         </div>   
                     </Link>
                 </div>

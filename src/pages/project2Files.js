@@ -23,7 +23,7 @@ export const project2 = {
         `Built the api with necessary http request`,
         `Built logic to allow the front-end to make http request to the back-end`,
         `Built the front-end as a single page application using React`,
-        `Designed and Developed each component of the single page application`,
+        `Designed and Built each component of the single page application`,
         `Developed a responsive front-end`,
         `Developed Light/Dark Mode using Use-Local-Stoarge`],
     technologies : `React, JavaScript, HTML, CSS, MySQL, Node.js, Express, Cors, Axios, Use-Local-Storage`,
