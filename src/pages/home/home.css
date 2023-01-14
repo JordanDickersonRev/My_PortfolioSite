@@ -1,5 +1,5 @@
 .homePage{
-    background: #c0c0c0;
+    background: var(--secondaryBackgroundColor);
     padding: 1vh 5vw 4vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 .profileImage img {
   max-width: 45%; 
   border-radius: 4vh;
-  border: 0.4vh solid #000000;
+  border: 0.4vh solid var(--primaryFontColor);
 }
 
 .skills{margin: 4vh 0vw;}
@@ -28,12 +28,12 @@
 .skillsSection2 img { max-width: 50%;}
 
 .viewProjects div{
-  border: 0.4vh solid #000000;
+  border: 0.4vh solid var(--primaryFontColor);
   border-radius: 1.5vh;
   cursor: pointer;
   margin: 1vh 7vw 4vh;
   padding: 0vh 0.2vw;
-  box-shadow:  5px 5px 5px #24344d;
+  box-shadow:  5px 5px 5px var(--themeColor);
   transition: margin 1s;
 }
 

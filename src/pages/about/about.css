@@ -1,29 +1,29 @@
 .about{ 
-    background: #151515;
+    background: var(--secondaryFontColor);
     display: flex;
     flex-direction: column;
     padding: 4vh 5vw;
   }
   .about h2 {
     text-align: center;
-    color:#ffffff;
+    color: var(--primaryBackgroundColor);
   }
   
   .about p {
     font-size: 2.5vh;
-    color:#ffffff;
+    color: var(--primaryBackgroundColor);
     line-height: 5vh;
   }
   
   .about a{
     font-weight: bold;
     margin-top: 5vh;
-    background: #c0c0c0;
-    color: #151515;
+    background: var(--secondaryBackgroundColor);
+    color: var(--secondaryFontColor);
     border-radius: 1.5vh;
     cursor: pointer;
     padding: 2vh 2vw;
-    box-shadow:  10px 10px #24344d;
+    box-shadow:  10px 10px var(--themeColor);
     transition: box-shadow 1s;
     text-align: center;
   }
@@ -33,5 +33,5 @@
   }
 
   @media only screen and (min-width: 769px){
-    .about a:hover {box-shadow:  10px 10px #b78428;}
+    .about a:hover {box-shadow:  10px 10px var(--hoverColor);}
   }

@@ -4,8 +4,8 @@
 }
 
 h1 {
-  color:#000000;
+  color:var(--primaryFontColor);
   margin-top: 12vh;
 } 
 
-h2, h3, p{color:#000000;}
+h2, h3, p{color:var(--primaryFontColor);}

@@ -50,8 +50,8 @@ function Home(){
                     <div className='skillsSection2'>
                         <div>
 
-                        <input onClick={switchTheme()} type="checkbox" />
-                        
+                        <input onClick={switchTheme} type="checkbox" />
+
                             <img src={require('../../images/html.png')} alt={'Html Logo'}/>
                             <p>HTML</p>
                         </div>

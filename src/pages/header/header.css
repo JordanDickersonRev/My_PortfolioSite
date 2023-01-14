@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: #24344d;
+    background: var(--themeColor);
     position: fixed;
     width: 100vw;
     text-transform: uppercase;
@@ -14,7 +14,7 @@
     font-weight: bold;
     font-size: 2.5vh; 
     padding: 3vh 2vw;
-    color: rgb(255, 255, 255);
+    color: var(--primaryBackgroundColor);
     cursor: pointer;
 }
   
@@ -24,30 +24,30 @@
     align-items: center;
 }
   
-.link:nth-child(1), .link:nth-child(2) {border-bottom: 0.1vh solid #ffffff;}
+.link:nth-child(1), .link:nth-child(2) {border-bottom: 0.1vh solid var(--primaryBackgroundColor);}
   
 .link {
     width: 100vw; 
     padding: 3vh 0vw;
     padding-left: 8vw;
     font-size: 2.5vh;
-    color: rgb(255, 255, 255);
-    background: #24344d;
+    color: var(--primaryBackgroundColor);
+    background: var(--themeColor);
     cursor: pointer;
     text-align: left;
 }
   
 .hamburger {
     position: absolute;
-    background: #24344d;
-    border: 0.1vh solid #24344d;
+    background: var(--themeColor);
+    border: 0.1vh solid var(--themeColor);
     height: 9vh;
 }
   
 .bar{
     width: 35px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: var(--primaryBackgroundColor);
     margin: 1vh 0;
 }
 
@@ -71,7 +71,7 @@
   
     .link:hover{ 
       opacity: 70%;
-      color: #ffffff;
+      color: var(--primaryBackgroundColor);
     }
   
     .hamburger {display: none;}
