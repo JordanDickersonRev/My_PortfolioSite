@@ -4,8 +4,8 @@ import ProjectPage from './pages/projectpage/projectpage';
 import Home from './pages/home/home';
 import Header from './pages/header/header';
 
-
 function App() {
+
   return (
     <div>
       <Router>
