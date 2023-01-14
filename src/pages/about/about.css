@@ -1,0 +1,37 @@
+.about{ 
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 5vw;
+  }
+  .about h2 {
+    text-align: center;
+    color:#ffffff;
+  }
+  
+  .about p {
+    font-size: 2.5vh;
+    color:#ffffff;
+    line-height: 5vh;
+  }
+  
+  .about a{
+    font-weight: bold;
+    margin-top: 5vh;
+    background: #c0c0c0;
+    color: #151515;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    padding: 2vh 2vw;
+    box-shadow:  10px 10px #24344d;
+    transition: box-shadow 1s;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 500px){
+    .about p {font-size: 3vh;}
+  }
+
+  @media only screen and (min-width: 769px){
+    .about a:hover {box-shadow:  10px 10px #b78428;}
+  }

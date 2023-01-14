@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom"
 import { useRef} from 'react';
-import ScrollToTop from './scrollToTop';
+import ScrollToTop from '../scrolltotop/scrolltotop';
+import './projectpage.css';
 
 function ProjectPage(){
     const location = useLocation();

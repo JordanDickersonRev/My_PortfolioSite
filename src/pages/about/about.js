@@ -1,3 +1,5 @@
+import './about.css';
+
 function About(){
 
     const about = `I am a full-stack .NET software developer with experience building front-end web

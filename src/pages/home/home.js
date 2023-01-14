@@ -1,9 +1,10 @@
-import About from './about';
-import Contact from './contact';
+import About from '../about/about';
+import Contact from '../contact/contact';
 import { Link } from 'react-router-dom';
-import {project1} from './project1Files';
-import {project2} from './project2Files';
-import {project3} from './project3Files';
+import {project1} from '../project1/project1files';
+import {project2} from '../project2/project2files';
+import {project3} from '../project3/project3files';
+import './home.css';
 
 function Home(){
 
@@ -18,7 +19,7 @@ function Home(){
                 <h1>Full-Stack Software Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
-                        <img src={require('../images/1.jpg')} alt={'Profile Pic'}/>
+                        <img src={require('../../images/1.jpg')} alt={'Profile Pic'}/>
                     </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
@@ -33,31 +34,31 @@ function Home(){
                     
                     <div className='skillsSection2'>
                         <div>
-                            <img src={require('../images/html.png')} alt={'Html Logo'}/>
+                            <img src={require('../../images/html.png')} alt={'Html Logo'}/>
                             <p>HTML</p>
                         </div>
                         <div>
-                            <img src={require('../images/css.png')} alt={'CSS Logo'}/>
+                            <img src={require('../../images/css.png')} alt={'CSS Logo'}/>
                             <p>CSS</p>
                         </div>
                         <div>
-                            <img src={require('../images/javascript.png')} alt={'Javascript Logo'}/>
+                            <img src={require('../../images/javascript.png')} alt={'Javascript Logo'}/>
                             <p>Javascript</p>
                         </div>
                         <div>
-                            <img src={require('../images/react.png')} alt={'React Logo'}/>
+                            <img src={require('../../images/react.png')} alt={'React Logo'}/>
                             <p>React</p>
                         </div>
                         <div>
-                            <img src={require('../images/node.png')} alt={'Node Logo'}/>
+                            <img src={require('../../images/node.png')} alt={'Node Logo'}/>
                             <p>Node.js</p>
                         </div>
                         <div>
-                            <img src={require('../images/mysql.png')} alt={'MySql Logo'}/>
+                            <img src={require('../../images/mysql.png')} alt={'MySql Logo'}/>
                             <p>MySql</p>
                         </div>
                         <div>
-                            <img src={require('../images/github.png')} alt={'Github Logo'}/>
+                            <img src={require('../../images/github.png')} alt={'Github Logo'}/>
                             <p>Github</p>
                         </div>
                     </div>
@@ -76,7 +77,7 @@ function Home(){
                         }}>
                         <div>
                             <h3>{project1.name}</h3>
-                            <img src={require('../images/ersapi.png')} alt={'REST API'}/>
+                            <img src={require('../../images/ersapi.png')} alt={'REST API'}/>
                         </div>
                     </Link>
                     <Link className='project'
@@ -90,7 +91,7 @@ function Home(){
                         }}>
                         <div>
                             <h3>{project2.name}</h3>
-                            <img src={require('../images/skatehouse.png')} alt={'SkateHouse E-Commerce Website'}/>
+                            <img src={require('../../images/skatehouse.png')} alt={'SkateHouse E-Commerce Website'}/>
                         </div>
                     </Link>
                     <Link className='project'

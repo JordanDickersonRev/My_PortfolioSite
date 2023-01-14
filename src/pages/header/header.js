@@ -1,5 +1,6 @@
 import {HashLink} from 'react-router-hash-link';
 import React, {useState, useEffect} from 'react';
+import './header.css';
 
 function Header(){
 

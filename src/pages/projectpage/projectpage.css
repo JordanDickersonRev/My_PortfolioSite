@@ -1,0 +1,49 @@
+.projectPage{
+    background: #c0c0c0;
+    padding: 1vh 5vw 4vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectPage div { margin: 6vh 0vw 0vh;}
+  
+  .projectPage p {
+    text-align: left;
+    font-size: 3vh;
+    line-height: 5vh;
+  }
+  .projectPage h1 { 
+    margin: 15vh 0vw 2vh;
+    font-size: 5vh;
+    text-align: left;
+  }
+  
+  .projectPage h2 {
+    font-size: 4vh;
+    text-align: left;
+  }
+  
+  .projectPage button {
+    cursor: pointer;
+    font-size: 2vh;
+    padding: 1vh 2vw;
+    width: 35%;
+    border-radius: 1vh;
+    border: 0.4vh solid #000000;
+    background: #c0c0c0;
+    font-weight: bold;
+    box-shadow:  10px 10px #24344d;
+    transition: box-shadow 1s;
+  }
+  
+  .projectPage video {
+    max-width: 100%;
+    margin-bottom: 1vh;
+  }
+
+  @media only screen and (min-width: 769px){
+  
+    .projectPage {padding: 1vh 15vw 4vh;}
+    .projectPage button:hover {box-shadow:  10px 10px #b78428;}
+    
+  }

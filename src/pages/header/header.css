@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background: #24344d;
+    position: fixed;
+    width: 100vw;
+    text-transform: uppercase;
+    text-align: right;
+    height: 9vh;
+    z-index: 1;
+}
+  
+.logo {
+    font-weight: bold;
+    font-size: 2.5vh; 
+    padding: 3vh 2vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+  
+.headerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.link:nth-child(1), .link:nth-child(2) {border-bottom: 0.1vh solid #ffffff;}
+  
+.link {
+    width: 100vw; 
+    padding: 3vh 0vw;
+    padding-left: 8vw;
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255);
+    background: #24344d;
+    cursor: pointer;
+    text-align: left;
+}
+  
+.hamburger {
+    position: absolute;
+    background: #24344d;
+    border: 0.1vh solid #24344d;
+    height: 9vh;
+}
+  
+.bar{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 1vh 0;
+}
+
+@media only screen and (min-width: 769px){
+    .header {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .headerRight {flex-direction: row;}
+  
+    .link:nth-child(1), .link:nth-child(2) {border-bottom: none;}
+  
+    .link{
+      width: auto;
+      background: none;
+      padding-left: 3vw;
+      padding-right: 3vw
+    }
+  
+    .link:hover{ 
+      opacity: 70%;
+      color: #ffffff;
+    }
+  
+    .hamburger {display: none;}
+}  

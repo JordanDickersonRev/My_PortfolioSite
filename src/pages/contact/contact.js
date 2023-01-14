@@ -1,3 +1,4 @@
+import './contact.css';
 import {send} from 'emailjs-com';
 import { useState } from 'react';
 

@@ -1,0 +1,67 @@
+.contact{
+    background: #c0c0c0;
+    padding: 1vh 5vw 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact h2{margin: 5vh 0vw;}
+
+  .contact p {line-height: 3.5vh;}
+  
+  .contact form{
+    display: grid;
+    justify-content: center;
+    gap: 1vh 0.5vw;
+    grid-template-columns: auto;
+  }
+  
+  .contact-section1 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1vh 0.5vw;
+  }
+  
+  .contact button{
+    padding: 1vh 0vw;
+    font-size: 2vh;
+    width: 60vw;
+    border: 0.3vh solid #000000;
+    background:#c0c0c0;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 3vh;
+  }
+  
+  .contact-item1, .contact-item2,
+  .contact-item3, .contact-item4 {
+    text-align: left;
+    padding: 1.5vh 1.5vw;
+    font-size: 2vh;
+    border: 0.3vh solid #000000;
+    background:#c0c0c0;
+    color: #000000;
+  }
+  
+  ::placeholder {
+    color: #000000;
+    opacity: 80%;
+  }
+  
+  .contact-item3 {
+    word-wrap: break-word;
+    height: 10vh;
+  }
+  
+  #error {
+    font-size: 2.5vh;
+    color:#000000;
+    margin: 3vh 0vw;
+    font-weight: bold;
+  }
+
+@media only screen and (min-width: 769px){
+    .contact{padding: 1vh 5vw 4vh;}
+}
+
