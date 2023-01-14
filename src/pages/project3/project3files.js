@@ -8,8 +8,8 @@ export const project3 = {
                 `Made the application responsive by developing for mobile first`,
                 `Built the hamburger menu using useEffect`,
                 `Tested every component of the application`,
-                `Developed Light/Dark Mode using Use-Local-Stoarge`],
-    technologies : `React, HTML, CSS, JavaScript, Use-Local-Storage, Emailjs-com`,
+                `Developed Light/Dark Mode using localStoarge`],
+    technologies : `React, HTML, CSS, JavaScript, Emailjs-com`,
     video : ``,
     code : `https://github.com/JordanDickersonRev/My_PortfolioSite`
 };

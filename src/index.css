@@ -10,3 +10,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primaryFontColor: #000000;
+  --secondaryFontColor: #ffffff;
+  --primaryBackgroundColor: #c0c0c0;
+  --secondaryBackgroundColor: #151515;
+  --themeColor: #24344d;
+  --hoverColor: #b78428;
+}
+[data-theme='dark'] {
+  --primaryFontColor: #ffffff;
+  --secondaryFontColor: #ffffff;
+  --primaryBackgroundColor: #1a1919;
+  --secondaryBackgroundColor: #151515;
+  --themeColor: #ffffff;
+  --hoverColor: #b72828;
+}
