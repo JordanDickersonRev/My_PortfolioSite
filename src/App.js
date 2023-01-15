@@ -3,14 +3,13 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ProjectPage from './pages/projectpage/projectpage';
 import Home from './pages/home/home';
 import Header from './pages/header/header';
+import DarkModeButton from './pages/DarkModeButton/DarkModeButton';
 
 function App() {
   
-  
-
   return (
-    <div id='theme'>
-      <button id="toggle-btn" class="dark-mode-toggle">Toggle dark mode</button>
+    <div>
+      <DarkModeButton/>
       <Router>
         <Header/>
         <Routes>

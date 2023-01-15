@@ -12,6 +12,10 @@ code {
 }
 
 :root {
+  
+}
+
+body.light {
   --primaryFontColor: #000000;
   --secondaryFontColor: #ffffff;
   --primaryBackgroundColor: #c0c0c0;
@@ -19,7 +23,7 @@ code {
   --themeColor: #24344d;
   --hoverColor: #b78428;
 }
-[data-theme='dark'] {
+body.dark {
   --primaryFontColor: #ffffff;
   --secondaryFontColor: #ffffff;
   --primaryBackgroundColor: #1a1919;
