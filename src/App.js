@@ -5,9 +5,12 @@ import Home from './pages/home/home';
 import Header from './pages/header/header';
 
 function App() {
+  
+  
 
   return (
-    <div>
+    <div id='theme'>
+      <button id="toggle-btn" class="dark-mode-toggle">Toggle dark mode</button>
       <Router>
         <Header/>
         <Routes>

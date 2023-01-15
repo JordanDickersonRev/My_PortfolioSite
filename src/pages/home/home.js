@@ -8,21 +8,6 @@ import './home.css';
 
 function Home(){
 
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if(localStorage.getItem("theme") === null)
-    {
-        localStorage.setItem("theme", defaultDark);
-    }
-
-    const theme = localStorage.getItem("theme");
-
-    function switchTheme()
-    {
-        const newTheme = theme === "light" ? "dark" : "light";
-        localStorage.setItem("theme", newTheme);
-    }
-
     const skills = `These are the languages, tools, and technologies I use to bring products to life.
         This list only reflects the skills I use the most. View my resume in the about section 
         to see more of my skills. I can learn any language, tools, or technology, I do not have 
@@ -30,7 +15,7 @@ function Home(){
 
     return(
         <div>
-            <div className='homePage' id='mySection' data-theme={theme}>
+            <div className='homePage' id='mySection'>
                 <h1>Full-Stack Software Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
@@ -49,9 +34,6 @@ function Home(){
                     
                     <div className='skillsSection2'>
                         <div>
-
-                        <input onClick={switchTheme} type="checkbox" />
-
                             <img src={require('../../images/html.png')} alt={'Html Logo'}/>
                             <p>HTML</p>
                         </div>
