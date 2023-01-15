@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: var(--themeColor);
+    background: var(--tc);
     position: fixed;
     width: 100vw;
     text-transform: uppercase;
@@ -14,7 +14,7 @@
     font-weight: bold;
     font-size: 2.5vh; 
     padding: 3vh 2vw;
-    color: var(--primaryBackgroundColor);
+    color: var(--pBC);
     cursor: pointer;
 }
   
@@ -24,30 +24,30 @@
     align-items: center;
 }
   
-.link:nth-child(1), .link:nth-child(2) {border-bottom: 0.1vh solid var(--primaryBackgroundColor);}
+.link:nth-child(1), .link:nth-child(2) {border-bottom: 0.1vh solid var(--pBC);}
   
 .link {
     width: 100vw; 
     padding: 3vh 0vw;
     padding-left: 8vw;
     font-size: 2.5vh;
-    color: var(--primaryBackgroundColor);
-    background: var(--themeColor);
+    color: var(--pBC);
+    background: var(--tC);
     cursor: pointer;
     text-align: left;
 }
   
 .hamburger {
     position: absolute;
-    background: var(--themeColor);
-    border: 0.1vh solid var(--themeColor);
+    background: var(--tC);
+    border: 0.1vh solid var(--tC);
     height: 9vh;
 }
   
 .bar{
     width: 35px;
     height: 5px;
-    background-color: var(--primaryBackgroundColor);
+    background-color: var(--pBC);
     margin: 1vh 0;
 }
 
@@ -71,7 +71,7 @@
   
     .link:hover{ 
       opacity: 70%;
-      color: var(--primaryBackgroundColor);
+      color: var(--pBC);
     }
   
     .hamburger {display: none;}

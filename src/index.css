@@ -16,18 +16,18 @@ code {
 }
 
 body.light {
-  --primaryFontColor: #000000;
-  --secondaryFontColor: #ffffff;
-  --primaryBackgroundColor: #c0c0c0;
-  --secondaryBackgroundColor: #151515;
-  --themeColor: #24344d;
-  --hoverColor: #b78428;
+  --pFC: #000000;
+  --sFC: #ffffff;
+  --pBC: #c0c0c0;
+  --sBC: #151515;
+  --tC: #24344d;
+  --hC: #b78428;
 }
 body.dark {
-  --primaryFontColor: #ffffff;
-  --secondaryFontColor: #ffffff;
-  --primaryBackgroundColor: #1a1919;
-  --secondaryBackgroundColor: #151515;
-  --themeColor: #ffffff;
-  --hoverColor: #b72828;
+  --pFC: #ffffff;
+  --sFC: #ffffff;
+  --pBC: #1a1919;
+  --sBC: #151515;
+  --tC: #ffffff;
+  --hC: #b72828;
 }

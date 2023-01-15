@@ -1,29 +1,29 @@
 .about{ 
-    background: var(--secondaryFontColor);
+    background: var(--sFC);
     display: flex;
     flex-direction: column;
     padding: 4vh 5vw;
   }
   .about h2 {
     text-align: center;
-    color: var(--primaryBackgroundColor);
+    color: var(--pBC);
   }
   
   .about p {
     font-size: 2.5vh;
-    color: var(--primaryBackgroundColor);
+    color: var(--pBC);
     line-height: 5vh;
   }
   
   .about a{
     font-weight: bold;
     margin-top: 5vh;
-    background: var(--secondaryBackgroundColor);
-    color: var(--secondaryFontColor);
+    background: var(--sBC);
+    color: var(--sFC);
     border-radius: 1.5vh;
     cursor: pointer;
     padding: 2vh 2vw;
-    box-shadow:  10px 10px var(--themeColor);
+    box-shadow:  10px 10px var(--tC);
     transition: box-shadow 1s;
     text-align: center;
   }
@@ -33,5 +33,5 @@
   }
 
   @media only screen and (min-width: 769px){
-    .about a:hover {box-shadow:  10px 10px var(--hoverColor);}
+    .about a:hover {box-shadow:  10px 10px var(--hC);}
   }

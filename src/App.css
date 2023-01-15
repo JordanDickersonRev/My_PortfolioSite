@@ -4,8 +4,9 @@
 }
 
 h1 {
-  color:var(--primaryFontColor);
+  color:var(--pFC);
   margin-top: 12vh;
 } 
 
-h2, h3, p{color:var(--primaryFontColor);}
+h2, h3, p{color:var(--pFC);}
+

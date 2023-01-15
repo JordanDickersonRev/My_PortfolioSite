@@ -11,11 +11,11 @@
 #lightMode:hover,
 #lightMode:focus {
     filter: none;
-    background-color: #ffffff;
+    background-color: var(--pFC);
     cursor: pointer;
 }
 
 #lightMode.clicked {
     filter: none !important;
-    background-color: #ffffff;
+    background-color: var(--pFC);
 }
