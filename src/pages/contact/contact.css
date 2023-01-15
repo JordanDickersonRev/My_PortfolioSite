@@ -1,5 +1,5 @@
 .contact{
-    background: var(--sBC);
+    background: var(--pBC);
     padding: 1vh 5vw 20vh;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     font-size: 2vh;
     width: 60vw;
     border: 0.3vh solid var(--pFC);
-    background:var(--sBC);
+    background:var(--pBC);
     color: var(--pFC);
     cursor: pointer;
     margin-top: 3vh;
@@ -40,7 +40,7 @@
     padding: 1.5vh 1.5vw;
     font-size: 2vh;
     border: 0.3vh solid var(--pFC);
-    background:var(--sBC);
+    background:var(--pBC);
     color: var(--pFC);
   }
   

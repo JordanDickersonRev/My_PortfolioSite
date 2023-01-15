@@ -1,5 +1,5 @@
 .about{ 
-    background: var(--sFC);
+    background: var(--sBC);
     display: flex;
     flex-direction: column;
     padding: 4vh 5vw;
@@ -18,8 +18,8 @@
   .about a{
     font-weight: bold;
     margin-top: 5vh;
-    background: var(--sBC);
-    color: var(--sFC);
+    background: var(--pBC);
+    color: var(--pFC);
     border-radius: 1.5vh;
     cursor: pointer;
     padding: 2vh 2vw;
