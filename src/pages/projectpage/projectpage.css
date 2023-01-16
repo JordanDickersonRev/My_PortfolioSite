@@ -27,7 +27,7 @@
   
   .projectPage button {
     cursor: pointer;
-    
+    font-size: 1.5vh;
     color: var(--pFC);
     padding: 1vh 2vw;
     width: 35%;

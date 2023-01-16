@@ -12,9 +12,12 @@
   }
   
   .about p {
-    font-size: 2.5vh;
     color: var(--hFC);
-    line-height: 5vh;
+  }
+
+  .about li {
+    color: var(--hFC);
+    margin-bottom: 2vh;
   }
   
   .about a{
@@ -29,10 +32,6 @@
     box-shadow:  10px 10px var(--tC);
     transition: box-shadow 1s, border 1s;
     text-align: center;
-  }
-
-  @media screen and (min-width: 500px){
-    .about p {font-size: 3vh;}
   }
 
   @media only screen and (min-width: 769px){

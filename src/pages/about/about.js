@@ -35,7 +35,8 @@ I am receptive and flexible, so I am open to new ideas or changes, open to const
                 constructive criticism/feedback, and not set in my ways.
                 </li>
             </ul>
-            <a href="https://docs.google.com/document/d/1Szxt_yNPuAC-2yKfrk46MG3lueX3RqWo447xgCWp9OQ/edit?usp=sharing">
+            <a href="https://docs.google.com/document/d/1Szxt_yNPuAC-2yKfrk46MG3lueX3RqWo447xgCWp9OQ/edit?usp=sharing"
+                target="_blank" >
                 View Resume
             </a>
         </div>
