@@ -17,16 +17,16 @@ code {
 
 body.light {
   /*font colors primary, secondary, and header*/
-  --pFC: #000000;
+  --pFC: #151515;
   /*--sFC: #ffffff;*/
-  --hFC: #ffffff;
+  --hFC: #dadada;
   
   /*background colors primary and secondary*/
-  --pBC: #c0c0c0;
+  --pBC: #dadada;
   --sBC: #151515;
   
   /*border colors for about and header*/
-  --aBC: #c0c0c0;
+  --aBC: #dadada;
   --hBC: #24344d;
  
   /*theme color*/
@@ -38,15 +38,15 @@ body.light {
 body.dark {
   --pFC: #dadada;
   /*--sFC: #ffffff;*/
-  --hFC: #ffffff;
+  --hFC: #dadada;
 
-  --pBC: #1a1919;
-  --sBC: #1a1919;
+  --pBC: #151515;
+  --sBC: #151515;
 
-  --aBC: #c0c0c0;
-  --hBC: #c0c0c0;
+  --aBC: #dadada;
+  --hBC: #dadada;
 
-  --tC: #1a1919;
+  --tC: #151515;
 
   --hC: #b78428;
 }
