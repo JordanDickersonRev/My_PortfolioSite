@@ -55,7 +55,7 @@ function ProjectPage(){
                 </div>
             }
             
-            <a href={code} target="_blank"><button>Source Code</button></a>
+            <a href={code} target="noopener">Source Code</a>
         </div>
     )
 }

@@ -25,18 +25,18 @@
     text-align: left;
   }
   
-  .projectPage button {
+  .projectPage button, .projectPage a {
     cursor: pointer;
     font-size: 1.5vh;
     color: var(--pFC);
     padding: 1vh 2vw;
     width: 35%;
     border-radius: 1vh;
-    border: 0.4vh solid var(--hBC);
+    border: 0.1vh solid var(--hBC);
     background: var(--pBC);
     font-weight: bold;
     box-shadow:  10px 10px var(--tC);
-    transition: box-shadow 1s, border;
+    transition: box-shadow 1s, border 1s;
   }
   
   .projectPage video {
@@ -47,8 +47,8 @@
   @media only screen and (min-width: 769px){
   
     .projectPage {padding: 1vh 15vw 4vh;}
-    .projectPage button:hover {
+    .projectPage button:hover, .projectPage a:hover {
       box-shadow:  10px 10px var(--hC);
-      border: 0.4vh solid var(-hC);
+      border: 0.1vh solid var(-hC);
     }
   }

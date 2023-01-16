@@ -13,10 +13,10 @@ export default function DarkModeButton() {
         theme = localStorage.getItem("theme");
     }
 
-    if(theme === lightTheme || theme === darkTheme) 
+    if(theme === darkTheme || theme === lightTheme) 
     {
         body.classList.add(theme);
-    } 
+    }
     else 
     {
         body.classList.add(darkTheme);

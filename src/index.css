@@ -4,6 +4,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--pBC);
 }
 
 code {
@@ -16,9 +17,8 @@ code {
 }
 
 body.light {
-  /*font colors primary, secondary, and header*/
+  /*font colors primary, and header*/
   --pFC: #151515;
-  /*--sFC: #ffffff;*/
   --hFC: #dadada;
   
   /*background colors primary and secondary*/
@@ -32,12 +32,13 @@ body.light {
   /*theme color*/
   --tC: #24344d;
 
-  /*hover color*/
+  /*hover colors*/
   --hC: #b78428;
+
+  --image: './images/moon.png';
 }
 body.dark {
   --pFC: #dadada;
-  /*--sFC: #ffffff;*/
   --hFC: #dadada;
 
   --pBC: #151515;
@@ -49,4 +50,5 @@ body.dark {
   --tC: #151515;
 
   --hC: #b78428;
+  --image: './images/sun.png';
 }
