@@ -1,5 +1,5 @@
 .projectPage{
-    background: var(--sBC);
+    background: var(--pBC);
     padding: 1vh 5vw 4vh;
     display: flex;
     flex-direction: column;
@@ -7,33 +7,36 @@
   
   .projectPage div { margin: 6vh 0vw 0vh;}
   
-  .projectPage p {
+  .projectPage p{
     text-align: left;
-    font-size: 3vh;
-    line-height: 5vh;
+    line-height: 3vh;
   }
+
+  .responsibilities li {
+    color: var(--pFC);
+  }
+
   .projectPage h1 { 
     margin: 15vh 0vw 2vh;
-    font-size: 5vh;
     text-align: left;
   }
   
   .projectPage h2 {
-    font-size: 4vh;
     text-align: left;
   }
   
   .projectPage button {
     cursor: pointer;
-    font-size: 2vh;
+    
+    color: var(--pFC);
     padding: 1vh 2vw;
     width: 35%;
     border-radius: 1vh;
-    border: 0.4vh solid var(--pFC);
-    background: var(--sBC);
+    border: 0.4vh solid var(--hBC);
+    background: var(--pBC);
     font-weight: bold;
     box-shadow:  10px 10px var(--tC);
-    transition: box-shadow 1s;
+    transition: box-shadow 1s, border;
   }
   
   .projectPage video {
@@ -44,6 +47,9 @@
   @media only screen and (min-width: 769px){
   
     .projectPage {padding: 1vh 15vw 4vh;}
-    .projectPage button:hover {box-shadow:  10px 10px var(--hC);}
+    .projectPage button:hover {
+      box-shadow:  10px 10px var(--hC);
+      border: 0.4vh solid var(-tC);
+    }
 
   }

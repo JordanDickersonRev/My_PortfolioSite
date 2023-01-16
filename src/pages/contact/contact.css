@@ -56,7 +56,7 @@
   
   #error {
     font-size: 2.5vh;
-    color:var(--pFC);
+    color:var(--hFC);
     margin: 3vh 0vw;
     font-weight: bold;
   }

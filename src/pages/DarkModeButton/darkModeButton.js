@@ -40,10 +40,10 @@ export default function DarkModeButton() {
     };
 
     return (
-        <button
-            className={theme === "light" ? clickedClass : ""}
-            id="lightMode"
-            onClick={(e) => switchTheme(e)}>
-        </button>
+            <button
+                className={theme === "light" ? clickedClass : ""}
+                id="lightMode"
+                onClick={(e) => switchTheme(e)}>
+            </button>
     )
 }

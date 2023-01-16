@@ -110,9 +110,9 @@ function Home(){
                 </div>
                 <div id='about'></div>
             </div>
-            <div className='about'><About/></div>
+            <About/>
             <div id='contact'></div>
-            <div className='contact'><Contact/></div>
+            <Contact/>
         </div>
     )
 }

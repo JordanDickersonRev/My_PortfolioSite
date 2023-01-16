@@ -16,18 +16,37 @@ code {
 }
 
 body.light {
+  /*font colors primary, secondary, and header*/
   --pFC: #000000;
-  --sFC: #ffffff;
+  /*--sFC: #ffffff;*/
+  --hFC: #ffffff;
+  
+  /*background colors primary and secondary*/
   --pBC: #c0c0c0;
   --sBC: #151515;
+  
+  /*border colors for about and header*/
+  --aBC: #c0c0c0;
+  --hBC: #24344d;
+ 
+  /*theme color*/
   --tC: #24344d;
+
+  /*hover color*/
   --hC: #b78428;
 }
 body.dark {
-  --pFC: #ffffff;
-  --sFC: #ffffff;
+  --pFC: #dadada;
+  /*--sFC: #ffffff;*/
+  --hFC: #ffffff;
+
   --pBC: #1a1919;
-  --sBC: #151515;
-  --tC: #ffffff;
-  --hC: #b72828;
+  --sBC: #1a1919;
+
+  --aBC: #c0c0c0;
+  --hBC: #c0c0c0;
+
+  --tC: #1a1919;
+
+  --hC: #b78428;
 }

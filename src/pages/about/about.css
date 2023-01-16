@@ -1,4 +1,6 @@
 .about{ 
+    border-top: solid 0.1vh var(--aBC);
+    border-bottom: solid 0.1vh var(--aBC);  
     background: var(--sBC);
     display: flex;
     flex-direction: column;
@@ -6,16 +8,17 @@
   }
   .about h2 {
     text-align: center;
-    color: var(--pBC);
+    color: var(--hFC);
   }
   
   .about p {
     font-size: 2.5vh;
-    color: var(--pBC);
+    color: var(--hFC);
     line-height: 5vh;
   }
   
   .about a{
+    border: 0.1vh solid var(--hBC);
     font-weight: bold;
     margin-top: 5vh;
     background: var(--pBC);
@@ -24,7 +27,7 @@
     cursor: pointer;
     padding: 2vh 2vw;
     box-shadow:  10px 10px var(--tC);
-    transition: box-shadow 1s;
+    transition: box-shadow 1s, border 1s;
     text-align: center;
   }
 
@@ -33,5 +36,8 @@
   }
 
   @media only screen and (min-width: 769px){
-    .about a:hover {box-shadow:  10px 10px var(--hC);}
+    .about a:hover {
+      box-shadow:  10px 10px var(--hC);
+      border: 0.1vh solid var(--hC);
+    }
   }
