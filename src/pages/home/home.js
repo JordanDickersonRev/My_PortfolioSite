@@ -8,11 +8,13 @@ import './home.css';
 
 function Home(){
 
-    const skills = `These are the languages, tools, and technologies I use to bring products to life.
+   /* const skills = `These are the languages, tools, and technologies I use to bring products to life.
         This list only reflects the skills I use the most. View my resume in the about section 
         to see more of my skills. I can learn any language, tools, or technology, I do not have 
         preferences.`;
 
+        <p>{skills}</p>*/
+  
     return(
         <div>
             <div className='homePage' id='mySection'>
@@ -28,38 +30,31 @@ function Home(){
                 </div>
                 <div className='skills'>
                     <div className='skillsSection1'>
-                        <h2>My Skills</h2>
-                        <p>{skills}</p>
+                        <h2>Skill Matrix</h2>
+                        
                     </div>
                     
                     <div className='skillsSection2'>
                         <div>
-                            <img src={require('../../images/html.png')} alt={'Html Logo'}/>
-                            <p>HTML</p>
+                        
                         </div>
                         <div>
-                            <img src={require('../../images/css.png')} alt={'CSS Logo'}/>
-                            <p>CSS</p>
+                            
                         </div>
                         <div>
-                            <img src={require('../../images/javascript.png')} alt={'Javascript Logo'}/>
-                            <p>Javascript</p>
+                            
                         </div>
                         <div>
-                            <img src={require('../../images/react.png')} alt={'React Logo'}/>
-                            <p>React</p>
+                            
                         </div>
                         <div>
-                            <img src={require('../../images/node.png')} alt={'Node Logo'}/>
-                            <p>Node.js</p>
+                            
                         </div>
                         <div>
-                            <img src={require('../../images/mysql.png')} alt={'MySql Logo'}/>
-                            <p>MySql</p>
+                            
                         </div>
                         <div>
-                            <img src={require('../../images/github.png')} alt={'Github Logo'}/>
-                            <p>Github</p>
+                            
                         </div>
                     </div>
                     <div id='viewProjects'></div>
