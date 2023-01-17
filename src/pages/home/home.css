@@ -22,10 +22,22 @@
 
 .skillsSection2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
-.skillsSection2 img { max-width: 50%;}
+.skillsSection2 h3 {
+  text-align: left;
+}
+
+.skillsSection2 li {
+  color: var(--pFC);
+  text-align: left;
+  font-size: 1.5vh;
+}
+
+.skillsSection2 div {
+  margin-bottom: 3vh;
+}
 
 .viewProjects div{
   border: 0.4vh solid var(--pFC);
@@ -43,12 +55,6 @@
   border-bottom-right-radius: 1vh;
 }
 
-
-@media screen and (min-width: 500px){
-    .skillsSection2 img { max-width: 40%;}
-}
-
-
 @media only screen and (min-width: 769px){
   
     .homePage {padding: 1vh 15vw 4vh;}
@@ -63,9 +69,6 @@
     .profile{padding-left: 5vw;}
   
     .profileImage img{ max-width: 25vw;}
-  
-    .skillsSection2 {grid-template-columns: 1fr 1fr 1fr 1fr;}
-    .skillsSection2 img { max-width: 50%;}
     
     .viewProjects {
       display: grid;
@@ -75,8 +78,11 @@
     .viewProjects div{margin: 1vh 1vw 4vh;}
     .viewProjects div:hover {margin: 0.5vh 0.5vw 4vh;}
   
-  
     .about {padding: 4vh 10vw;}
   
     .contact{padding: 1vh 5vw 4vh;}
+}
+
+@media only screen and (min-width:1050px){
+  .skillsSection2 {grid-template-columns: 1fr 1fr;}
 }

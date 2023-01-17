@@ -30,31 +30,47 @@ function Home(){
                 </div>
                 <div className='skills'>
                     <div className='skillsSection1'>
-                        <h2>Skill Matrix</h2>
-                        
+                        <h2>Skills</h2> 
                     </div>
-                    
                     <div className='skillsSection2'>
                         <div>
-                        
+                            <h3>Back-End Technology</h3>
+                            <ul>
+                                <li>C#</li>
+                                <li>ASP.NET</li>
+                                <li>ADO.NET</li>
+                                <li>.NET</li>
+                                <li>SQL Database</li>
+                            </ul>
                         </div>
                         <div>
-                            
+                            <h3>Front-End Technology</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
                         </div>
                         <div>
-                            
+                            <h3>Software Developer Skills</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>SDLC</li>
+                                <li>Microsoft Azure</li>
+                                <li>MySQL Workbench</li>
+                                <li>Unix/Linux Commands</li>
+                            </ul>
                         </div>
                         <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
+                            <h3>Other Programming Languages</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Unix/Linux Shell Scripting</li>
+                            </ul>
                         </div>
                     </div>
                     <div id='viewProjects'></div>
