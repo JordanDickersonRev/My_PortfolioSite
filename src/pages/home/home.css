@@ -18,25 +18,26 @@
 
 .skills{margin: 4vh 0vw;}
 
-.skillsSection1 {text-align: left;}
+.skillsSection1 {text-align: center;}
 
 .skillsSection2 {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.skillsSection2 h3 {
-  text-align: left;
-}
-
-.skillsSection2 li {
-  color: var(--pFC);
-  text-align: left;
-  font-size: 1.5vh;
-}
-
 .skillsSection2 div {
   margin-bottom: 3vh;
+  text-align: center;
+}
+
+.skillsSection2 h3 {
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+.skillsSection2 p {
+  line-height: 1.5vh;
+  font-weight: bold;
 }
 
 .viewProjects div{
@@ -53,6 +54,10 @@
   max-width: 100%;
   border-bottom-left-radius: 1vh;
   border-bottom-right-radius: 1vh;
+}
+
+@media only screen and (min-width:540px){
+  .skillsSection2 {grid-template-columns: 1fr 1fr;}
 }
 
 @media only screen and (min-width: 769px){
@@ -81,8 +86,4 @@
     .about {padding: 4vh 10vw;}
   
     .contact{padding: 1vh 5vw 4vh;}
-}
-
-@media only screen and (min-width:1050px){
-  .skillsSection2 {grid-template-columns: 1fr 1fr;}
 }
