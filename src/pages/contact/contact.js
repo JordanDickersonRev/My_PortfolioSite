@@ -13,23 +13,26 @@ function Contact(){
     })
 
     function onSubmit(e){ 
-        setDisable(true);
         e.preventDefault(); 
 
         if(toSend.from_name === '' || toSend.to_name === ''
         || toSend.message === '' || toSend.reply_to === ''){
             document.getElementById('error').innerHTML = `Error, blank field(s).`;
-            setDisable(false);
         }
         else{
-            document.getElementById('error').innerHTML = `Thank you for contacting me,
-                I will respond as soon as possible.`;
             send(
                 process.env.REACT_APP_SERVICE_ID,
                 process.env.REACT_APP_TEMPLATE_ID,
                 toSend,
                 process.env.REACT_APP_USER_ID
-            ).then((response)=>{ console.log(response.status, response.text);
+            ).then((response)=>{ 
+                if(response.status >= 200 && response.status <= 299)
+                {
+                    document.getElementById('error').innerHTML = `Thank you for contacting me,
+                I will respond as soon as possible.`;
+                    setDisable(true);
+                }
+
             }).catch((err)=>{document.getElementById('error').innerHTML = `FAILED..., ${err}`;});
         }
     };
@@ -39,7 +42,7 @@ function Contact(){
     return (
         <div className="contact">
             <h2>Contact Me</h2>
-            {!disabled ?
+            
             <form onSubmit={onSubmit}>
                 <div className='contact-section1'>
                     <input
@@ -76,35 +79,12 @@ function Contact(){
                     value={toSend.reply_to}
                     onChange={handleChange}
                 />
-                <button type='submit'>Submit</button>
+                {!disabled ? 
+                    <button type='submit'>Submit</button>
+                    :
+                    <button hidden={true}>Submit</button>
+                }
             </form>
-            :
-            <form>
-                <div className='contact-section1'>
-                    <input
-                        disabled
-                        className='contact-item1'
-                        value={toSend.from_name}
-                    />
-                    <input
-                        className='contact-item2'
-                        hidden
-                        disabled
-                        value={toSend.to_name}
-                    />
-                </div>
-                <textarea
-                    disabled
-                    className='contact-item3'
-                    value={toSend.message}
-                />
-                <input
-                    disabled
-                    className='contact-item4'
-                    value={toSend.reply_to}
-                 />
-                <button disabled>Submit</button>
-            </form>}
             <div id='error'></div>
         </div>
     )
