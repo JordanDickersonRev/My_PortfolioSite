@@ -33,31 +33,31 @@ function Home(){
                         <h2>Skills</h2> 
                     </div>
                     <div className='skillsSection2'>
+                        <h3>Back-End Technologies</h3>
                         <div>
-                            <h3>Back-End Technologies</h3>
                             <p>C#</p>
                             <p>ASP.NET</p>
                             <p>ADO.NET</p>
                             <p>.NET</p>
                             <p>SQL Database</p>
                         </div>
+                        <h3>Front-End Technologies</h3>
                         <div>
-                            <h3>Front-End Technologies</h3>
                             <p>React</p>
                             <p>HTML</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
                         </div>
+                        <h3>Front-End Technologies</h3>
                         <div>
-                            <h3>Software Developer Skills</h3>
                             <p>Git</p>
                             <p>SDLC</p>
                             <p>Microsoft Azure</p>
                             <p>MySQL Workbench</p>
                             <p>Unix/Linux Commands</p>
                         </div>
+                        <h3>Other Programming Languages</h3>
                         <div>
-                            <h3>Other Programming Languages</h3>
                             <p>Java</p>
                             <p>Python</p>
                             <p>C++</p>
