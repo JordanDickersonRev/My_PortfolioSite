@@ -26,16 +26,12 @@
 }
 
 .skillsSection2 div {
-  margin-bottom: 3vh;
-  text-align: center;
-}
-
-.skillsSection2 h3 {
+  text-align: left;
   margin-bottom: 2vh;
 }
 
-.skillsSection2 p {
-  line-height: 1.5vh;
+.skillsSection2 h3 {
+  text-align: left;
 }
 
 .viewProjects div{
@@ -52,10 +48,6 @@
   max-width: 100%;
   border-bottom-left-radius: 1vh;
   border-bottom-right-radius: 1vh;
-}
-
-@media only screen and (min-width:540px){
-  .skillsSection2 {grid-template-columns: 1fr 1fr;}
 }
 
 @media only screen and (min-width: 769px){
