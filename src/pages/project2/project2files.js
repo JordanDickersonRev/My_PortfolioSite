@@ -16,8 +16,7 @@ export const project2 = {
         of the skateboard. The client's bag shows every skateboard that they 
         added, the total due, and a list of their favorite skateboards if 
         the client is logged in. Clients can also add skateboards to the bag
-        from their favorites. Scroll down to see my future plans for this
-        website.`,
+        from their favorites.`,
     responsibilities : [`Owner/Developer`, 
         `Built the database and tables in MySQL Workbench`,
         `Built the api with necessary http request`,
