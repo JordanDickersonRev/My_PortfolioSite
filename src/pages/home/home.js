@@ -13,7 +13,7 @@ function Home(){
                 <h1>Full-Stack Software Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
-                        <img src={require('../../images/1.jpg')} alt={'Profile Pic'}/>
+                        <img src={require('../../images/1.jpeg')} alt={'Profile Pic'}/>
                     </div>
                     <div className='profile'>
                         <h2>Hi, I'm Jordan</h2>
@@ -22,7 +22,7 @@ function Home(){
                 </div>
                 <div className='skills'>
                     <div className='skillsSection1'>
-                        <h2>Skills</h2> 
+                        <h1>Skills</h1> 
                     </div>
                     <div className='skillsSection2'>
                         <div>
