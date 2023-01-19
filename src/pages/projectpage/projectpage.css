@@ -52,3 +52,11 @@
       border: 0.1vh solid var(-hC);
     }
   }
+
+  @media only screen and (min-width: 1024px){
+    .projectPage{ padding: 1vh 25vw 4vh; }
+  }
+
+  @media only screen and (min-width: 1576px){
+    .projectPage{ padding: 1vh 30vw 4vh; }
+  }

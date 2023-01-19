@@ -58,10 +58,6 @@
     
     .viewProjects div{margin: 1vh 1vw 4vh;}
     .viewProjects div:hover {margin: 0.5vh 0.5vw 4vh;}
-  
-    /*.about {padding: 4vh 10vw;}
-  
-    .contact{padding: 1vh 5vw 4vh;}*/
 }
 
 @media only screen and (min-width: 1024px){

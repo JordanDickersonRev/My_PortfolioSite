@@ -1,6 +1,6 @@
 .contact{
     background: var(--pBC);
-    padding: 1vh 5vw 20vh;
+    padding: 1vh 15vw 4vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -24,7 +24,7 @@
   .contact button{
     padding: 1vh 0vw;
     font-size: 1.5vh;
-    width: 60vw;
+    width: 40vw;
     border: 0.3vh solid var(--pFC);
     background:var(--pBC);
     color: var(--pFC);
@@ -59,7 +59,12 @@
     font-weight: bold;
   }
 
-@media only screen and (min-width: 769px){
-    .contact{padding: 1vh 5vw 4vh;}
+
+@media only screen and (min-width: 1024px){
+  .contact{ padding: 1vh 25vw 4vh; }
+}
+
+@media only screen and (min-width: 1576px){
+  .contact{ padding: 1vh 30vw 4vh; }
 }
 
