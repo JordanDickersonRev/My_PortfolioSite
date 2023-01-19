@@ -10,7 +10,7 @@ function Home(){
     return(
         <div>
             <div className='homePage' id='mySection'>
-                <h1>Full-Stack Software Developer</h1>
+                <h1 className='homePageTitle'>Full-Stack Software Developer</h1>
                 <div className='mySection'>
                     <div className='profileImage'>
                         <img src={require('../../images/1.jpeg')} alt={'Profile Pic'}/>

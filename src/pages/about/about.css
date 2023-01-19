@@ -4,7 +4,7 @@
     background: var(--sBC);
     display: flex;
     flex-direction: column;
-    padding: 4vh 5vw;
+    padding: 1vh 15vw 4vh;
   }
   .about h2 {
     text-align: center;
@@ -39,4 +39,12 @@
       box-shadow:  10px 10px var(--hC);
       border: 0.1vh solid var(--hC);
     }
+  }
+
+  @media only screen and (min-width: 1024px){
+    .about{ padding: 1vh 25vw 4vh; }
+  }
+
+  @media only screen and (min-width: 1576px){
+    .about{ padding: 1vh 30vw 4vh; }
   }

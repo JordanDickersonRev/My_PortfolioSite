@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.homePage h1 {margin-top: 13vh;}
+.homePageTitle{margin-top: 13vh;}
 
 .homePage p {line-height: 3.5vh;}
 
@@ -56,26 +56,12 @@
   
     .homePage {padding: 1vh 15vw 4vh;}
     
-  
-    /*.mySection{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 3vh 10vw 3vh;
-      align-items: center;
-    }*/
-  
-    /*.profile{padding-left: 5vw;}*/
-  
-    /*.profileImage img{ max-width: 45%;}*/
-    
-    
-  
     .viewProjects div{margin: 1vh 1vw 4vh;}
     .viewProjects div:hover {margin: 0.5vh 0.5vw 4vh;}
   
-    .about {padding: 4vh 10vw;}
+    /*.about {padding: 4vh 10vw;}
   
-    .contact{padding: 1vh 5vw 4vh;}
+    .contact{padding: 1vh 5vw 4vh;}*/
 }
 
 @media only screen and (min-width: 1024px){
@@ -89,20 +75,4 @@
 
 @media only screen and (min-width: 1576px){
   .homePage {padding: 1vh 30vw 4vh;}
-
-  
 }
-
-/*@media only screen and (min-width: 1000px){
-
-  .skills, .viewProjects{margin: 4vh 6vw;}
-
-}
-
-@media only screen and (min-width: 1200px){
-  .skills, .viewProjects{margin: 4vh 9vw;}
-}
-
-@media only screen and (min-width: 1400px){
-  .skills, .viewProjects{margin: 4vh 12vw;}
-}*/
