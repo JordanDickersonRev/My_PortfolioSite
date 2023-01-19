@@ -44,7 +44,7 @@ function Home(){
                     </div>
                     <div id='viewProjects'></div>
                 </div>
-                <h2>View Projects</h2>
+                <h1>View Projects</h1>
                 <div className='viewProjects'>
                     <Link className='project'
                         to={`/projects/${project1.name}`}

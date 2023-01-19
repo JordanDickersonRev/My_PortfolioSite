@@ -20,7 +20,7 @@ I am receptive and flexible, so I am open to new ideas or changes, open to const
 
     return (
         <div className="about">
-            <h2>About Me</h2>
+            <h1>About Me</h1>
             <p>{about}</p>
             <h2>Interesting Facts About Me</h2>
             <ul>
