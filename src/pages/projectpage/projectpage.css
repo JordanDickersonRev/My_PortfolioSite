@@ -5,7 +5,9 @@
     flex-direction: column;
   }
   
-  .projectPage div { margin: 6vh 0vw 0vh;}
+  .projectPage div { /*margin: 6vh 0vw 0vh;*/
+    margin: 3vh 0vw 0vh;
+  }
   
   .projectPage p{
     text-align: left;
