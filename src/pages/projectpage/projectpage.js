@@ -48,7 +48,8 @@ function ProjectPage(){
                 <div ref={ref}>
                     <h2>Video</h2>
                     <video controls
-                        src={require(`/videos/${video}.mp4`)}
+                        //src={require(`/videos/${video}.mp4`)}
+                        src={require(`./videos/${video}.mp4`)}
                         type="video/mp4">
                             Your browser does not support this video.
                     </video>
