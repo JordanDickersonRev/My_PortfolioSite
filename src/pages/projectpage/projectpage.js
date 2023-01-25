@@ -1,14 +1,14 @@
 import { useLocation } from "react-router-dom"
-import { useRef} from 'react';
+
 import ScrollToTop from '../scrolltotop/scrolltotop';
 import './projectpage.css';
 
 function ProjectPage(){
     const location = useLocation();
     const { name, summary, responsibilities, technologies, video, code} = location.state;
-    const ref = useRef(null);
+    //const ref = useRef(null);
 
-    function viewVideo(){ ref.current?.scrollIntoView();}
+    //function viewVideo(){ ref.current?.scrollIntoView();}
 
     return(
         <div className="projectPage">
@@ -48,6 +48,7 @@ function ProjectPage(){
 }
 export default ProjectPage;
 /*
+import { useRef} from 'react';
 { video !== `` &&
                 <button onClick={()=> viewVideo()}>Skip to Video</button>
             }
