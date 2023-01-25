@@ -15,10 +15,6 @@ function ProjectPage(){
             <ScrollToTop/>
             <h1>{name}</h1>
 
-            { video !== `` &&
-                <button onClick={()=> viewVideo()}>Skip to Video</button>
-            }
-            
             { summary!== `` &&
                 <div className="summary">
                     <h2>Summary</h2>
@@ -44,7 +40,18 @@ function ProjectPage(){
                 <p>{technologies}</p>
             </div>
 
-            { video !== `` &&
+            
+            
+            <a href={code} target="noopener">Source Code</a>
+        </div>
+    )
+}
+export default ProjectPage;
+/*
+{ video !== `` &&
+                <button onClick={()=> viewVideo()}>Skip to Video</button>
+            }
+{ video !== `` &&
                 <div ref={ref}>
                     <h2>Video</h2>
                     <video controls
@@ -55,9 +62,4 @@ function ProjectPage(){
                     </video>
                 </div>
             }
-            
-            <a href={code} target="noopener">Source Code</a>
-        </div>
-    )
-}
-export default ProjectPage;
+*/
