@@ -1,4 +1,4 @@
-import './darkModeButton.css';
+import './darkmodebutton.css';
 
 export default function DarkModeButton() {
 
