@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom';
 import {project1} from '../project1/project1files';
 import {project2} from '../project2/project2files';
 import {project3} from '../project3/project3files';
-import DarkModeButton from '../darkmodebutton/darkmodebutton';
 import './home.css';
 
 function Home(){  
     return(
         <div>
-            <DarkModeButton/>
             <div className='homePage' id='mySection'>
                 <h1 className='homePageTitle'>Full-Stack Software Developer</h1>
                 <div className='mySection'>

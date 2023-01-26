@@ -1,20 +1,24 @@
 import { useLocation } from "react-router-dom"
-
+import { useRef} from 'react';
 import ScrollToTop from '../scrolltotop/scrolltotop';
 import './projectpage.css';
 
 function ProjectPage(){
     const location = useLocation();
     const { name, summary, responsibilities, technologies, video, code} = location.state;
-    //const ref = useRef(null);
+    const ref = useRef(null);
 
-    //function viewVideo(){ ref.current?.scrollIntoView();}
+    function viewVideo(){ ref.current?.scrollIntoView();}
 
     return(
         <div className="projectPage">
             <ScrollToTop/>
             <h1>{name}</h1>
 
+            { video !== `` &&
+                <button onClick={()=> viewVideo()}>Skip to Video</button>
+            }
+            
             { summary!== `` &&
                 <div className="summary">
                     <h2>Summary</h2>
@@ -40,27 +44,19 @@ function ProjectPage(){
                 <p>{technologies}</p>
             </div>
 
-            
+            { video !== `` &&
+                <div ref={ref}>
+                    <h2>Video</h2>
+                    <video controls
+                        src={require(`/videos/${video}.mp4`)}
+                        type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+                </div>
+            }
             
             <a href={code} target="noopener">Source Code</a>
         </div>
     )
 }
 export default ProjectPage;
-/*
-import { useRef} from 'react';
-{ video !== `` &&
-                <button onClick={()=> viewVideo()}>Skip to Video</button>
-            }
-{ video !== `` &&
-                <div ref={ref}>
-                    <h2>Video</h2>
-                    <video controls
-                        //src={require(`/videos/${video}.mp4`)}
-                        src={require(`./videos/${video}.mp4`)}
-                        type="video/mp4">
-                            Your browser does not support this video.
-                    </video>
-                </div>
-            }
-*/

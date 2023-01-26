@@ -19,6 +19,6 @@ export const project1 = {
                 `Tested API with Swagger`,
                 `Built custom logger for Repolayer`],
     technologies : `C#, .NET, ASP.NET Core Web API, ADO.NET, Azure SQL Database, Swagger, xUnit Testing`,
-    video : ``,//`ersapi`,
+    video : `ersapi`,
     code : `https://github.com/221114-NET/JordanDickersonRevatureProject1`
 };

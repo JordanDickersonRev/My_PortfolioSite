@@ -26,6 +26,6 @@ export const project2 = {
         `Developed a responsive front-end`,
         `Developed Light/Dark Mode using Use-Local-Stoarge`],
     technologies : `React, JavaScript, HTML, CSS, MySQL, Node.js, Express, Cors, Axios, Use-Local-Storage`,
-    video : ``,//`skatehouse`,
+    video : `skatehouse`,
     code : `https://github.com/JordanDickersonRev/E_Commerce_WebSite`
 };
