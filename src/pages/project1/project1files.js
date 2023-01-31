@@ -1,5 +1,5 @@
 export const project1 = {
-    name : `Employee Reimbursement Service REST API`,
+    name : `Employee Reimbursement Service API`,
     summary :`This project is an API for employees to submit reimbursement requests and
         managers to approve or deny the submitted request. Employees or Managers, can register
         with a unique email and password combination, and log into the application with said 
